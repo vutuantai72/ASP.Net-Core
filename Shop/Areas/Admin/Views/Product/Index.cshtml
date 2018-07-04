@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Shop.Data.Model.Product>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                @*<div class="col-sm-6">
+                        <h1>Categories</h1>
+                    </div>*@
+                <div class="col-sm-12">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Base" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">Products</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <a asp-controller="Product" asp-action="Create"><button type="button" class="col-2 btn btn-success float-right">Thêm mới</button></a>
+                        <h3 class="card-title">Products</h3>
+
+                    </div>
+
+                    <!-- /.card-header -->
+                    <div class="card-body">
+
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.ID)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Name)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Alias)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Price)</th>
+                                    <th>@Html.DisplayNameFor(model => model.PromotionPrice)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Image)</th>
+                                    <th>@Html.DisplayNameFor(model => model.CreatedDate)</th>
+                                    <th style="width: 10%">Controll</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.ID)</td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>@Html.DisplayFor(modelItem => item.Alias)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.PromotionPrice)</td>
+                                    <td><img src="@Html.DisplayFor(modelItem => item.Image)" width="100px"/></td>
+                                    <td>@Html.DisplayFor(modelItem => item.CreatedDate)</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-primary" asp-controller="Product" asp-action="Update" asp-route-id="@item.ID"><i class="fa fa-pencil"></i></a>
+                                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+
