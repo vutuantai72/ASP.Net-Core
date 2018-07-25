@@ -1,0 +1,22 @@
+E:\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.deps.json
+E:\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.runtimeconfig.json
+E:\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.runtimeconfig.dev.json
+E:\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.dll
+E:\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.csprojAssemblyReference.cache
+E:\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.csproj.CoreCompileInputs.cache
+E:\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.AssemblyInfoInputs.cache
+E:\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.AssemblyInfo.cs
+E:\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.pdb
+E:\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.dll
+E:\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.pdb
+E:\ASP.Net Core\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.deps.json
+E:\ASP.Net Core\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.runtimeconfig.json
+E:\ASP.Net Core\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.runtimeconfig.dev.json
+E:\ASP.Net Core\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.dll
+E:\ASP.Net Core\ShopBaby\ShopBaby\bin\Debug\netcoreapp2.0\ShopBaby.pdb
+E:\ASP.Net Core\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.csprojAssemblyReference.cache
+E:\ASP.Net Core\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.csproj.CoreCompileInputs.cache
+E:\ASP.Net Core\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.AssemblyInfoInputs.cache
+E:\ASP.Net Core\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.AssemblyInfo.cs
+E:\ASP.Net Core\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.dll
+E:\ASP.Net Core\ShopBaby\ShopBaby\obj\Debug\netcoreapp2.0\ShopBaby.pdb
