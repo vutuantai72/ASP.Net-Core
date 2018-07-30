@@ -49,5 +49,7 @@ namespace ShopBaby.Data.Model
         public bool Status { set; get; }
 
         public virtual ICollection<Product> Products { get; set; }
+
+        public virtual ICollection<ProductCategory> ProductCategories { get; set; }
     }
 }

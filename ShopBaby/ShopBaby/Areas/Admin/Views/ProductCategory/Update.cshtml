@@ -45,32 +45,12 @@
                                     <span asp-validation-for="Name"></span>
                                 </div>
                                 <div class="form-group">
-                                    <label asp-for="Alias">Tiêu đề Seo</label>
-                                    <input asp-for="Alias" type="text" required class="form-control" placeholder="Enter ...">
-                                    <span asp-validation-for="Alias"></span>
+                                    @*<label asp-for="CategoryID">Danh mục cha</label>*@
+                                    @Html.LabelFor(model => model.ParentID, "Danh mục cha")
+                                    @Html.DropDownListFor(model => model.ParentID, new SelectList(ViewBag.list, "ID", "Name"), "Choose", new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.ParentID)
                                 </div>
-                                <div class="form-group">
-                                    <label>Mô tả ngắn</label>
-                                    <input asp-for="Description" type="text" required class="form-control" placeholder="Enter ...">
-                                    <span asp-validation-for="Description"></span>
-                                </div>
-                                <!-- select -->
-                                <div class="form-group">
-                                    <label>Danh mục cha</label>
-                                    <select class="form-control">
-                                        <option value="">option 1</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label asp-for="MetaKeyword">Meta Keyword</label>
-                                    <input asp-for="MetaKeyword" type="text" required class="form-control" placeholder="Enter ...">
-                                    <span asp-validation-for="MetaKeyword"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label asp-for="MetaDescription">Meta Description</label>
-                                    <textarea asp-for="MetaDescription" required id="metaDescription" class="form-control" placeholder="Enter ..."></textarea>
-                                    <span asp-validation-for="MetaDescription"></span>
-                                </div>
+
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-success pull-right">Lưu</button>
                                     <a class="btn btn-default pull-right" asp-controller="ProductCategory" asp-action="Index">Huỷ</a>

@@ -17,8 +17,8 @@ namespace ShopBaby.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var category = await _context.ProductCategories.ToListAsync();
-            return View(category);
+            var categories = await _context.ProductCategories.ToListAsync();
+            return View(categories);
         }
     }
 }

@@ -43,6 +43,13 @@
                                     <span asp-validation-for="Name"></span>
                                 </div>
                                 <div class="form-group">
+                                    @*<label asp-for="CategoryID">Danh mục cha</label>*@
+                                    @Html.LabelFor(model => model.CategoryID, "Danh mục cha")
+                                    @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.list, "ID", "Name"), "Choose", new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.CategoryID)
+
+                                </div>
+                                <div class="form-group">
                                     <label asp-for="Price">Giá gốc</label>
                                     <input asp-for="Price" type="number" class="form-control">
                                     <span asp-validation-for="Price"></span>
@@ -67,23 +74,19 @@
                                     <input asp-for="Image" type="file" class="form-control" name="singleFile">
                                     <span asp-validation-for="Image"></span>
                                 </div>
-                                <div class="form-group">
-                                    <label asp-for="MoreImages">Hình ảnh</label>
-                                    <input asp-for="MoreImages" type="file" name="files" multiple class="form-control">
-                                    <span asp-validation-for="MoreImages"></span>
-                                </div>
+            
                                 <div class="form-group">
                                     <label>Mô tả ngắn</label>
-                                    <input asp-for="Description" type="text" class="form-control" placeholder="Enter ...">
+                                    <input asp-for="Content" type="text" class="form-control" placeholder="Enter ...">
+                                    <span asp-validation-for="Content"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Mô tả</label>
+                                    <input asp-for="Description" id="Description" type="text" class="form-control" placeholder="Enter ...">
                                     <span asp-validation-for="Description"></span>
                                 </div>
                                 <!-- select -->
-                                <div class="form-group">
-                                    @*<label asp-for="CategoryID">Danh mục cha</label>*@
-                                    @Html.LabelFor(model => model.CategoryID, "Danh mục cha")
-                                    @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.list, "ID", "Name"), "Choose", new { @class = "form-control" })
-                                    @Html.ValidationMessageFor(model => model.CategoryID)
-                                </div>
+
                                 <div class="form-group">
                                     <label asp-for="MetaKeyword">Meta Keyword</label>
                                     <input asp-for="MetaKeyword" type="text" class="form-control" placeholder="Enter ...">
@@ -91,7 +94,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label asp-for="MetaDescription">Meta Description</label>
-                                    <textarea asp-for="MetaDescription" id="metaDescription" class="form-control" placeholder="Enter ..."></textarea>
+                                    <textarea asp-for="MetaDescription" class="form-control" placeholder="Enter ..."></textarea>
                                     <span asp-validation-for="MetaDescription"></span>
                                 </div>
                                 <div class="form-group">

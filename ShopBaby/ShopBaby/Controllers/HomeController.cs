@@ -18,10 +18,12 @@ namespace ShopBaby.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var list = await _context.Products.ToListAsync();
+            return View(list);
         }
+
 
         public async Task<IActionResult> GetCategory(int id)
         {

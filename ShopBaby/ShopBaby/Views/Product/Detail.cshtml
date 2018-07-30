@@ -1,4 +1,4 @@
-﻿
+﻿@model ShopBaby.Data.Model.Product
 @{
     ViewData["Title"] = "Detail";
     Layout = "~/Views/Shared/_DetailLayout.cshtml";
@@ -20,8 +20,8 @@
             <div class="col-md-6 single-top wow fadeInLeft animated" data-wow-delay=".5s">
                 <div class="flexslider">
                     <ul class="slides">
-                        <li data-thumb="../client/images/s1.jpg">
-                            <div class="thumb-image"> <img src="~/client/images/s1.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
+                        <li data-thumb="../../@Model.Image">
+                            <div class="thumb-image"> <img src="../../@Model.Image" data-imagezoom="true" class="img-responsive" alt=""> </div>
                         </li>
                         <li data-thumb="../client/images/s2.jpg">
                             <div class="thumb-image"> <img src="~/client/images/s2.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="col-md-6 single-top-left simpleCart_shelfItem wow fadeInRight animated" data-wow-delay=".5s">
-                <h3>Babyhug Kurta And Jodhpuri Breeches</h3>
+                <h3>@Model.Name</h3>
                 <div class="single-rating">
                     <span class="starRating">
                         <input id="rating5" type="radio" name="rating" value="5" checked>
@@ -50,25 +50,19 @@
                     <p>5.00 out of 5</p>
                     <a href="#">Add Your Review</a>
                 </div>
-                <h6 class="item_price">$600.00</h6>
+                @if (Model.PromotionPrice != null)
+                {
+                    <h6 class="item_price"><del>@Model.Price.ToString("#,##0")</del></h6>
+                    <h6 class="item_price">@Html.DisplayFor(modelItem => Model.PromotionPrice)</h6>
+                }
+                else
+                {
+                    <h6 class="item_price">@Model.Price.ToString("#,##0")</h6>
+                }
                 <p>Etiam faucibus viverra libero vel efficitur. Ut semper nisl ut laoreet ultrices. Maecenas dictum arcu purus, sit amet volutpat purus viverra sit amet. Quisque lacinia quam sed tortor interdum, malesuada congue nunc ornare. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                <ul class="size">
-                    <h4>Size</h4>
-                    <li><a href="#">6-12 M</a></li>
-                    <li><a href="#">1-2 Y</a></li>
-                    <li><a href="#">2-3 Y</a></li>
-                    <li><a href="#">3-4 Y</a></li>
-                </ul>
-                <ul class="color">
-                    <h4>Color</h4>
-                    <li><a href="#"></a></li>
-                    <li><a href="#" class="red"></a></li>
-                    <li><a href="#" class="green"></a></li>
-                    <li><a href="#" class="pink"></a></li>
-                </ul>
                 <div class="clearfix"> </div>
                 <div class="quantity">
-                    <p class="qty"> Qty :  </p><input min="1" type="number" value="1" class="item_quantity">
+                    <p class="qty"> Qty :  </p><input min="1" type="number" value="@Model.Quantity" class="item_quantity">
                 </div>
                 <div class="btn_form">
                     <a href="#" class="add-cart item_add">ADD TO CART</a>
@@ -142,7 +136,6 @@
         <div class="related-products">
             <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
                 <h3 class="title">Related<span> Products</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit curabitur </p>
             </div>
             <div class="related-products-info">
                 <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
