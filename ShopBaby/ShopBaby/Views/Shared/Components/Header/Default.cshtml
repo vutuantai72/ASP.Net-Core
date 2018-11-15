@@ -1,0 +1,41 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="top-header navbar navbar-default">
+    <!--header-one-->
+    <div class="container">
+
+        @if (ViewBag.user != null)
+        {
+            <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
+                <p>
+                    <a asp-area="" asp-action="Index" asp-controller="Home">Xin chào @ViewBag.user</a>
+                    <a asp-area="" asp-action="Logout" asp-controller="Account"><span class="glyphicon glyphicon-log-in"></span>Logout</a>
+                </p>
+            </div>
+
+        }
+        else
+        {
+            <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
+                <p>
+                    Welcome to Modern Shoppe <a asp-area="" asp-action="Register" asp-controller="Account">Register </a> Or
+                    <a asp-action="Login" asp-area="" asp-controller="Account">Sign In </a>
+                </p>
+            </div>
+        }
+
+        <div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
+            <ul>
+                <li><a href="#"> </a></li>
+                <li><a href="#" class="pin"> </a></li>
+                <li><a href="#" class="in"> </a></li>
+                <li><a href="#" class="be"> </a></li>
+                <li><a href="#" class="you"> </a></li>
+                <li><a href="#" class="vimeo"> </a></li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>

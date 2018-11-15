@@ -24,7 +24,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12">   
                 <div class="card">
                     <div class="card-header">
                         <a asp-controller="Product" asp-action="Create"><button type="button" class="col-2 btn btn-success float-right">Thêm mới</button></a>
@@ -47,7 +47,7 @@
                                     <th>@Html.DisplayNameFor(model => model.Warranty)</th>
                                     <th>@Html.DisplayNameFor(model => model.Image)</th>
                                     <th>@Html.DisplayNameFor(model => model.CreatedDate)</th>
-                                    <th style="width: 10.5%">Controll</th>
+                                    <th style="width: 5%">Controll</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -63,12 +63,11 @@
                                     <td>@Html.DisplayFor(modelItem => item.PromotionPrice)</td>
                                     <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
                                     <td>@Html.DisplayFor(modelItem => item.Warranty)</td>
-                                    <td><img src="@Html.DisplayFor(modelItem => item.Image)" width="100px" /></td>
+                                    <td><img src="@Html.DisplayFor(modelItem => item.Image)" width="60px" /></td>
                                     <td>@Html.DisplayFor(modelItem => item.CreatedDate)</td>
                                     <td>
                                         <a class="btn btn-sm btn-primary" asp-controller="Product" asp-action="Update" asp-route-id="@item.ID"><i class="fa fa-pencil"></i></a>
                                         <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
-                                        <a asp-controller="Product" asp-action="MoreImages" asp-route-id="@item.ID" class="btn btn-sm btn-default"><i class="fa fa-image"></i></a>
                                     </td>
                                 </tr>
                                 }

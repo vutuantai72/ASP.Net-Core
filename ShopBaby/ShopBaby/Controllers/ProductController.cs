@@ -16,9 +16,16 @@ namespace ShopBaby.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index(int id)
+        int PageSize = 1;//thay đổi hoặc lưu appsetting
+        public async Task<IActionResult> Index(int id,int page = 1)
         {
+
             var products = await _context.Products.Where(p => p.CategoryID == id).ToListAsync();
+
+            ViewBag.ID = id;
+            ViewBag.TrangHienTai = page;
+            ViewBag.TongSoTrang = Math.Ceiling(products.Count * 1.0 / PageSize);
+            products = products.Skip((page - 1) * PageSize).Take(PageSize).ToList();
             
             return View(products);
         }

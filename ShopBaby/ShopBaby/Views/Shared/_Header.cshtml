@@ -1,24 +1,5 @@
-﻿
-<div class="header">
-    <div class="top-header navbar navbar-default">
-        <!--header-one-->
-        <div class="container">
-            <div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
-                <p>Welcome to Modern Shoppe <a asp-action="Index" asp-controller="Register">Register </a> Or <a asp-action="Index" asp-controller="Login">Sign In </a></p>
-            </div>
-            <div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
-                <ul>
-                    <li><a href="#"> </a></li>
-                    <li><a href="#" class="pin"> </a></li>
-                    <li><a href="#" class="in"> </a></li>
-                    <li><a href="#" class="be"> </a></li>
-                    <li><a href="#" class="you"> </a></li>
-                    <li><a href="#" class="vimeo"> </a></li>
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
+﻿<div class="header">
+    @await Component.InvokeAsync("Header")
     <div class="header-two navbar navbar-default">
         <!--header-two-->
         <div class="container">

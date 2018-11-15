@@ -84,10 +84,10 @@
                 {
                     <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
                         <div class="new-top">
-                            <a asp-controller="Product" asp-route-id="@item.ID" asp-action="Detail"><img src="../../@item.Image" class="img-responsive" alt="" /></a>
+                            <a asp-controller="Product" asp-route-id="@item.ID" asp-action="Detail"><img src="../../@item.Image" style="width:260.75px;height:260.75px" class="img-responsive" alt="" /></a>
                             <div class="new-text">
                                 <ul>
-                                    <li><a class="item_add" href=""> Add to cart</a></li>
+                                    <li><a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.ID" class="item_add"> Add to cart</a></li>
                                     <li><a asp-controller="Product" asp-route-id="@item.ID" asp-action="Detail">Quick View </a></li>
                                     <li><a asp-action="Index" asp-route-id ="@item.CategoryID" asp-controller="Product">Show Details </a></li>
                                 </ul>
@@ -106,7 +106,7 @@
                             {
                                 <div class="ofr">
                                     <p class="pric1"><del>@item.Price.ToString("#,##0")</del></p>
-                                    <p><span class="item_price">@Html.DisplayFor(modelItem => item.PromotionPrice)</span></p>
+                                    <p><span class="item_price">@item.PromotionPrice.Value.ToString("#,##0")</span></p>
                                 </div>
                             }
                             else
@@ -138,10 +138,10 @@
                 {
             <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
                 <div class="new-top">
-                    <a asp-controller="Product" asp-action="Detail"><img src="../../@item.Image" class="img-responsive" alt="" /></a>
+                    <a asp-controller="Product" asp-action="Detail"><img src="../../@item.Image" style="width:260.75px;height:260.75px" class="img-responsive" alt="" /></a>
                     <div class="new-text">
                         <ul>
-                            <li><a class="item_add" href=""> Add to cart</a></li>
+                            <li><a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.ID" class="item_add"> Add to cart</a></li>
                             <li><a asp-controller="Product" asp-action="Detail">Quick View </a></li>
                             <li><a asp-action="Index" asp-route-id ="@item.CategoryID" asp-controller="Product">Show Details </a></li>
                         </ul>
@@ -160,7 +160,7 @@
                     {
                         <div class="ofr">
                             <p class="pric1"><del>@item.Price.ToString("#,##0")</del></p>
-                            <p><span class="item_price">@Html.DisplayFor(modelItem => item.PromotionPrice)</span></p>
+                            <p><span class="item_price">@item.PromotionPrice.Value.ToString("#,##0")</span></p>
                         </div>
                     }
                     else

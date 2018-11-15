@@ -19,6 +19,167 @@ namespace ShopBaby.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType");
+
+                    b.Property<string>("ClaimValue");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType");
+
+                    b.Property<string>("ClaimValue");
+
+                    b.Property<string>("UserId")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider");
+
+                    b.Property<string>("ProviderKey");
+
+                    b.Property<string>("ProviderDisplayName");
+
+                    b.Property<string>("UserId")
+                        .IsRequired();
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId");
+
+                    b.Property<string>("RoleId");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId");
+
+                    b.Property<string>("LoginProvider");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Value");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("ShopBaby.Data.Model.ApplicationUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AccessFailedCount");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256);
+
+                    b.Property<bool>("EmailConfirmed");
+
+                    b.Property<bool>("LockoutEnabled");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PasswordHash");
+
+                    b.Property<string>("PhoneNumber");
+
+                    b.Property<bool>("PhoneNumberConfirmed");
+
+                    b.Property<string>("SecurityStamp");
+
+                    b.Property<bool>("TwoFactorEnabled");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers");
+                });
+
             modelBuilder.Entity("ShopBaby.Data.Model.Contact", b =>
                 {
                     b.Property<int>("ID")
@@ -36,21 +197,75 @@ namespace ShopBaby.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("ShopBaby.Data.Model.FileImage", b =>
+            modelBuilder.Entity("ShopBaby.Data.Model.Customer", b =>
                 {
-                    b.Property<int>("ImageID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Images");
+                    b.Property<string>("Email");
+
+                    b.Property<string>("FullName");
+
+                    b.Property<int>("OrderID");
+
+                    b.Property<string>("Password");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("ShopBaby.Data.Model.Order", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CreatedBy");
+
+                    b.Property<DateTime?>("CreatedDate");
+
+                    b.Property<string>("CustomerAddress")
+                        .IsRequired()
+                        .HasMaxLength(256);
+
+                    b.Property<string>("CustomerEmail")
+                        .IsRequired()
+                        .HasMaxLength(256);
+
+                    b.Property<int>("CustomerId");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasMaxLength(256);
+
+                    b.Property<string>("CustomerPhone");
+
+                    b.Property<int?>("OrderID");
+
+                    b.Property<bool>("Status");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("ShopBaby.Data.Model.OrderDetail", b =>
+                {
+                    b.Property<int>("OrderID");
 
                     b.Property<int>("ProductID");
 
-                    b.HasKey("ImageID");
+                    b.Property<decimal>("Price");
+
+                    b.Property<int>("Quantity");
+
+                    b.HasKey("OrderID", "ProductID");
 
                     b.HasIndex("ProductID");
 
-                    b.ToTable("FileImages");
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("ShopBaby.Data.Model.Product", b =>
@@ -65,9 +280,6 @@ namespace ShopBaby.Migrations
                     b.Property<int>("CategoryID");
 
                     b.Property<string>("Content");
-
-                    b.Property<string>("CreatedBy")
-                        .HasMaxLength(256);
 
                     b.Property<DateTime?>("CreatedDate")
                         .ValueGeneratedOnAdd()
@@ -89,14 +301,9 @@ namespace ShopBaby.Migrations
                     b.Property<string>("MetaKeyword")
                         .HasMaxLength(256);
 
-                    b.Property<string>("MoreImages")
-                        .HasColumnType("xml");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(256);
-
-                    b.Property<decimal>("OriginalPrice");
 
                     b.Property<decimal>("Price");
 
@@ -106,14 +313,7 @@ namespace ShopBaby.Migrations
 
                     b.Property<bool>("Status");
 
-                    b.Property<string>("Tags");
-
-                    b.Property<string>("UpdatedBy")
-                        .HasMaxLength(256);
-
                     b.Property<DateTime?>("UpdatedDate");
-
-                    b.Property<int?>("ViewCount");
 
                     b.Property<int?>("Warranty");
 
@@ -133,17 +333,12 @@ namespace ShopBaby.Migrations
                     b.Property<string>("Alias")
                         .HasMaxLength(256);
 
-                    b.Property<string>("CreatedBy")
-                        .HasMaxLength(256);
-
                     b.Property<DateTime?>("CreatedDate")
                         .ValueGeneratedOnAdd()
                         .HasDefaultValueSql("getdate()");
 
                     b.Property<string>("Description")
                         .HasMaxLength(500);
-
-                    b.Property<int?>("DisplayOrder");
 
                     b.Property<bool?>("HomeFlag");
 
@@ -166,9 +361,6 @@ namespace ShopBaby.Migrations
 
                     b.Property<bool>("Status");
 
-                    b.Property<string>("UpdatedBy")
-                        .HasMaxLength(256);
-
                     b.Property<DateTime?>("UpdatedDate");
 
                     b.HasKey("ID");
@@ -178,10 +370,67 @@ namespace ShopBaby.Migrations
                     b.ToTable("ProductCategories");
                 });
 
-            modelBuilder.Entity("ShopBaby.Data.Model.FileImage", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("ShopBaby.Data.Model.ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("ShopBaby.Data.Model.ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("ShopBaby.Data.Model.ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("ShopBaby.Data.Model.ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("ShopBaby.Data.Model.Order", b =>
+                {
+                    b.HasOne("ShopBaby.Data.Model.Customer", "Customer")
+                        .WithMany("Orders")
+                        .HasForeignKey("CustomerId");
+                });
+
+            modelBuilder.Entity("ShopBaby.Data.Model.OrderDetail", b =>
+                {
+                    b.HasOne("ShopBaby.Data.Model.Order", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("ShopBaby.Data.Model.Product", "Product")
-                        .WithMany("FileImages")
+                        .WithMany()
                         .HasForeignKey("ProductID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
@@ -197,7 +446,7 @@ namespace ShopBaby.Migrations
             modelBuilder.Entity("ShopBaby.Data.Model.ProductCategory", b =>
                 {
                     b.HasOne("ShopBaby.Data.Model.ProductCategory")
-                        .WithMany("ProductCategorie1")
+                        .WithMany("ProductCategories")
                         .HasForeignKey("ProductCategoryID");
                 });
 #pragma warning restore 612, 618

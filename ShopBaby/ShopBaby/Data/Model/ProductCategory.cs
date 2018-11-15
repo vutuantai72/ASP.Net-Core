@@ -24,7 +24,6 @@ namespace ShopBaby.Data.Model
         [MaxLength(500)]
         public string Description { set; get; }
         public int? ParentID { set; get; }
-        public int? DisplayOrder { set; get; }
 
         [MaxLength(256)]
         public string Image { set; get; }
@@ -32,13 +31,8 @@ namespace ShopBaby.Data.Model
         public bool? HomeFlag { set; get; }
         public DateTime? CreatedDate { get; set; }
 
-        [MaxLength(256)]
-        public string CreatedBy { get; set; }
-
         public DateTime? UpdatedDate { get; set; }
 
-        [MaxLength(256)]
-        public string UpdatedBy { get; set; }
 
         [MaxLength(256)]
         public string MetaKeyword { set; get; }

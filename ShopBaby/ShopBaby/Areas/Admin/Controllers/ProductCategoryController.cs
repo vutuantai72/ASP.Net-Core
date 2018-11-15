@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ namespace ShopBaby.Areas.Admin.Controllers
 {
     [Route("Admin")]
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ProductCategoryController : Controller
     {
         private readonly ApplicationDbContext _context;

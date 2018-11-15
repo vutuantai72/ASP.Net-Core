@@ -16,27 +16,44 @@
 <!--cart-items-->
 <div class="cart-items">
     <div class="container">
-        <h3 class="wow fadeInUp animated" data-wow-delay=".5s">My Shopping Cart(3)</h3>
+        <h3 class="wow fadeInUp animated" data-wow-delay=".5s">My Shopping Cart(@ViewBag.count)</h3>
         <div class="cart-header wow fadeInUp animated" data-wow-delay=".5s">
-            <div class="alert-close"> </div>
+            @foreach (var item in ViewBag.cart)
+            {
             <div class="cart-sec simpleCart_shelfItem">
                 <div class="cart-item cyc">
-                    <a asp-controller="Product" asp-action="Detail"><img src="~/client/images/g1.jpg" class="img-responsive" alt=""></a>
+                    <a asp-controller="Product" asp-action="Detail"><img src="../../@item.Product.Image" style="width:100px" class="img-responsive" alt=""></a>
                 </div>
                 <div class="cart-item-info">
-                    <h4><a asp-controller="Product" asp-action="Detail"> Lorem Ipsum is not simply </a><span>Pickup time :</span></h4>
-                    <ul class="qty">
-                        <li><p>Min. order value :</p></li>
-                        <li><p>FREE delivery</p></li>
-                    </ul>
-                    <div class="delivery">
-                        <p>Service Charges : $10.00</p>
-                        <span>Delivered in 1-1:30 hours</span>
-                        <div class="clearfix"></div>
-                    </div>
+                    <h4><a asp-controller="Product" asp-action="Detail"> @item.Product.Name </a></h4>
+                    @if (item.Product.PromotionPrice != null)
+                    {
+                        <ul class="qty">
+                            <li><p>Price:@item.Product.PromotionPrice.ToString("#,##0")</p></li>
+                            <li><p>Min. order value :@item.Quantity</p></li>
+                            <li><p>Total :@((item.Product.PromotionPrice * item.Quantity).ToString("#,##0"))</p></li>
+                            <li><p>FREE delivery</p></li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="qty">
+                            <li><p>Price:@item.Product.Price.ToString("#,##0")</p></li>
+                            <li><p>Min. order value :@item.Quantity</p></li>
+                            <li><p>Total :@((item.Product.Price * item.Quantity).ToString("#,##0"))</p></li>
+                            <li><p>FREE delivery</p></li>
+                        </ul>
+                    }
+                    <a asp-controller="Cart" asp-action="Remove" asp-route-id="@item.Product.ID" class="btn btn-sm btn-danger">Remove
+                    </a>
+
                 </div>
                 <div class="clearfix"></div>
             </div>
+            }
+            <div>Total : @ViewBag.total.ToString("#,##0")</div>
+            <a asp-action="Checkout" asp-controller="Cart" class="btn btn-success">Checkout</a>
+
         </div>
     </div>
 </div>

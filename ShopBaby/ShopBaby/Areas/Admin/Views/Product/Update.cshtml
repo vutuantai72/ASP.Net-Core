@@ -92,11 +92,10 @@
 
                                 <div class="form-group">
                                     <label>Mô tả </label>
-                                    <input asp-for="Description" id="Description" type="text" class="form-control" placeholder="Enter ...">
+                                    <textarea asp-for="Description" id="Description"  class="form-control" placeholder="Enter ..."></textarea>
                                     <span asp-validation-for="Description"></span>
                                 </div>
                                 <div class="form-group">
-                                    @*<label asp-for="CategoryID">Danh mục cha</label>*@
                                     @Html.LabelFor(model => model.CategoryID, "Danh mục cha")
                                     @Html.DropDownListFor(model => model.CategoryID, new SelectList(ViewBag.list, "ID", "Name"), "Choose", new { @class = "form-control" })
                                     @Html.ValidationMessageFor(model => model.CategoryID)
@@ -115,12 +114,12 @@
                                 <div class="form-group">
                                     <div class="checkbox">
                                         <label>
-                                            <input  type="checkbox" name="HotFlag" value="true" /> Sản phẩm Hot
+                                            <input type="checkbox" name="HotFlag" @((Model.HotFlag ?? false) ? "checked='checked'" : "") value="true" />Sản phẩm 
                                         </label>
                                     </div>
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox"  name="HomeFlag" value="true" /> Sản phẩm phổ biến
+                                            <input type="checkbox" name="HomeFlag" @((Model.HomeFlag ?? false) ? "checked='checked'" : "") value="true" /> Sản phẩm phổ biến
                                         </label>
                                     </div>
                                 </div>

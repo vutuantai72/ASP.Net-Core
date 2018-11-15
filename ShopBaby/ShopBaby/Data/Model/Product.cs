@@ -28,9 +28,6 @@ namespace ShopBaby.Data.Model
         [MaxLength(256)]
         public string Image { set; get; }
 
-        [Column(TypeName = "xml")]
-        public string MoreImages { set; get; } // XElement in kiểu dữ liệu XML trong SQL
-
         [DisplayFormat(DataFormatString = "{0:N}")]
         public decimal Price { set; get; }
 
@@ -46,23 +43,12 @@ namespace ShopBaby.Data.Model
 
         public bool? HomeFlag { set; get; }
         public bool? HotFlag { set; get; }
-        public int? ViewCount { set; get; }
-
-        public string Tags { set; get; }
 
         public int Quantity { set; get; }
 
-        public decimal OriginalPrice { set; get; }
-
         public DateTime? CreatedDate { get; set; }
 
-        [MaxLength(256)]
-        public string CreatedBy { get; set; }
-
         public DateTime? UpdatedDate { get; set; }
-
-        [MaxLength(256)]
-        public string UpdatedBy { get; set; }
 
         [MaxLength(256)]
         public string MetaKeyword { set; get; }
@@ -74,7 +60,5 @@ namespace ShopBaby.Data.Model
 
         [ForeignKey("CategoryID")] // chỉ ra trường để tham chiếu
         public virtual ProductCategory ProductCategory { set; get; }
-
-        public virtual ICollection<FileImage> FileImages { get; set; }
     }
 }

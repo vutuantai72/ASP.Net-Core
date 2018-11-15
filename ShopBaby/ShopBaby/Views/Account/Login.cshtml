@@ -1,6 +1,6 @@
-﻿
+﻿@model ShopBaby.Models.LoginViewModel
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -21,12 +21,16 @@
     </div>
     <div class="widget-shadow">
         <div class="login-top wow fadeInUp animated" data-wow-delay=".7s">
-            <h4>Welcome back to Modern Shoppe ! <br> Not a Member? <a asp-action="Index" asp-controller="Register">  Register Now »</a> </h4>
+            <h4>Welcome back to Modern Shoppe ! <br> Not a Member? <a asp-area="" asp-action="Register" asp-controller="Account">  Register Now »</a> </h4>
         </div>
         <div class="login-body wow fadeInUp animated" data-wow-delay=".7s">
-            <form>
-                <input type="text" class="user" name="email" placeholder="Enter your email" required="">
-                <input type="password" name="password" class="lock" placeholder="Password">
+            <form asp-action="Login" asp-controller="Account" asp-area="" asp-route-ReturnUrl="@ViewBag.ReturnUrl"  method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="text-danger">@ViewBag.ThongBaoLoi</div>
+                <input type="text" class="user" asp-for="UserName"  placeholder="Enter your email">
+                <span asp-validation-for="UserName" class="text-danger"></span>
+                <input type="password" asp-for="Password" class="lock" placeholder="Password">
+                <span asp-validation-for="Password" class="text-danger"></span>
                 <input type="submit" name="Sign In" value="Sign In">
                 <div class="forgot-grid">
                     <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Remember me</label>

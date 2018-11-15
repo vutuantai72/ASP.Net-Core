@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,7 @@ namespace ShopBaby.Areas.Admin.Controllers
 {
     [Route("Admin")]
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ProductController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -146,10 +148,11 @@ namespace ShopBaby.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Update(Product product, IFormFile singleFile)
         {
-            if (!ModelState.IsValid) return View(product);
             List<ProductCategory> categories = new List<ProductCategory>();
             categories = _context.ProductCategories.ToList();
             ViewBag.list = categories;
+            if (!ModelState.IsValid) return View(product);
+            
 
             if (product.HotFlag == null)
             {
@@ -207,73 +210,5 @@ namespace ShopBaby.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        [Route("Product/MoreImages/{id}")]
-        [HttpGet]
-        public IActionResult MoreImages(int id)
-        {
-            List<FileImage> item = new List<FileImage>();
-            item = _context.FileImages.Where(p => p.ProductID == id).ToList();
-            ViewBag.images = item;
-            return View();
-        }
-
-        [Route("Product/MoreImages/{id}")]
-        [HttpPost]
-        public IActionResult MoreImages(FileImage image, IFormFile singleFile, Product product)
-        {
-            image.ProductID = product.ID;
-
-            #region singleFile
-
-            var fileName = string.Empty;
-            var newFileNames = string.Empty;
-            if (singleFile != null)
-            {
-                if (singleFile.Length > 0)
-                {
-                    //Lấy tên cho file
-                    fileName = ContentDispositionHeaderValue.Parse(singleFile.ContentDisposition).FileName.Trim('"');
-
-                    //Tạo tên duy nhất
-                    var myUniqueFileName = Convert.ToString(Guid.NewGuid());
-
-                    //Lấy đuôi file (.jpg)
-                    var FileExtension = Path.GetExtension(fileName);
-
-                    //Kết nối  myUniqueFileName + FileExtension
-                    newFileNames = myUniqueFileName + FileExtension;
-
-                    //Lưu file
-                    fileName = Path.Combine(_appEnvironment.WebRootPath, "images/product/") + $@"\{newFileNames}";
-
-                    //Kết nối biến vào database
-                    image.Images = "images/product/" + newFileNames;
-
-                    using (FileStream fs = System.IO.File.Create(fileName))
-                    {
-                        singleFile.CopyTo(fs);
-                        fs.Flush();
-                    }
-                }
-            }
-
-            _context.Add(image);
-            Save();
-
-            #endregion singleFile
-
-            return RedirectToAction("MoreImages");
-        }
-
-        [Route("Product/DeleteImages/{id}")]
-        [HttpGet]
-        public IActionResult DeleteImages(int id)
-        {
-            var item = _context.FileImages.Find(id).ProductID;
-            var data = _context.FileImages.Find(id);
-            _context.FileImages.Remove(data);
-            Save();
-            return RedirectToAction("MoreImages", new { id = item });
-        }
     }
 }

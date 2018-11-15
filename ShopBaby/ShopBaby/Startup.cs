@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ShopBaby.Data;
+using ShopBaby.Data.Model;
 
 namespace ShopBaby
 {
@@ -23,8 +26,22 @@ namespace ShopBaby
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession(options => 
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(5);
+            });
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Account/Login/dang-nhap.html";
+                    options.LogoutPath = "/Account/Logout";
+                    options.AccessDeniedPath = "/Account/Access";
+                });
             services.AddDbContext<ApplicationDbContext>(options =>
                      options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
             services.AddMvc();
 
         }
@@ -41,6 +58,9 @@ namespace ShopBaby
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            app.UseSession();
+
+            app.UseAuthentication();
 
             app.UseStaticFiles();
 
@@ -51,7 +71,7 @@ namespace ShopBaby
                     template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute(
                     name: "areas",
-                    template: "{area:exists}/{controller=Base}/{action=Index}/{id?}");
+                    template: "{area=Admin}/{controller=Base}/{action=Index}/{id?}");
             });
         }
     }

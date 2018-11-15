@@ -1,0 +1,93 @@
+﻿@model IEnumerable<ShopBaby.Data.Model.Order>
+@{
+    ViewData["Title"] = "Customer";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                @*<div class="col-sm-6">
+                        <h1>Categories</h1>
+                    </div>*@
+                <div class="col-sm-12">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Base" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">Customer</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <!-- /.card-header -->
+                    <div class="card-body">
+
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.ID)</th>
+                                    <th>@Html.DisplayNameFor(model => model.CustomerName)</th>
+                                    <th>@Html.DisplayNameFor(model => model.CustomerAddress)</th>
+                                    <th>@Html.DisplayNameFor(model => model.CustomerPhone)</th>
+                                    <th>@Html.DisplayNameFor(model => model.CustomerEmail)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Status)</th>
+                                    <th style="width: 5%">Controll</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.ID)</td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CustomerName)
+                                    </td>
+                                    <td>@Html.DisplayFor(modelItem => item.CustomerAddress)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.CustomerPhone)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.CustomerEmail)</td>
+                                    @if (item.Status == true)
+                                    {
+                                        <td><h type="button" class="btn btn-success">@item.Status</h></td>
+                                    }
+                                    else
+                                    {
+                                        <td><h type="button" class="btn btn-danger">@item.Status</h></td>
+                                    }
+
+                                    @if (item.Status == true)
+                                    {
+                                        <td>
+                                            <a asp-controller="Customer" asp-action="Bill" asp-route-id="@item.ID" class="btn btn-sm btn-default">Chi tiết</a>
+                          
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td>
+                                            <a asp-controller="Customer" asp-action="Bill" asp-route-id="@item.ID" class="btn btn-sm btn-default">Chi tiết</a>
+                                            <a asp-controller="Customer" asp-action="Checkout" asp-route-id="@item.ID" class="btn btn-sm btn-primary">Gửi hàng</a>
+                                        </td>
+                                    }
+
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
+

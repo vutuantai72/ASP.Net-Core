@@ -1,0 +1,82 @@
+﻿@model ShopBaby.Data.Model.Order
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="margin: 10px 10px">
+    <h2 style="text-align:center">THÔNG TIN HÀNG HOÁ</h2>
+    <table align="center" border="1">
+        <tr style="text-align:center; font-weight:bold">
+            <td>Tên sản phẩm</td>
+            <td>Hình</td>
+            <td>Số lượng</td>
+            <td>Đơn giá</td>
+            <td>Thành tiền</td>
+        </tr>
+        @foreach (var item in ViewBag.cart)
+        {
+            <tr style="text-align:center; font-weight:bold">
+                <td>@item.Product.Name</td>
+                <td><img src="../../@item.Product.Image" style="width:70px" class="img-responsive" alt=""></td>
+                <td>@item.Quantity</td>
+                @if (@item.Product.PromotionPrice != null)
+                {
+                    <td>@item.Product.PromotionPrice.ToString("#,##0")</td>
+                    <td>@((item.Product.PromotionPrice * item.Quantity).ToString("#,##0"))</td>
+                }
+                else
+                {
+                    <td>@item.Product.Price.ToString("#,##0")</td>
+                    <td>@((item.Product.Price * item.Quantity).ToString("#,##0"))</td>
+                }
+            </tr>
+        }
+        <tr style="font-weight:bold;text-align:right;color:red">
+            <td colspan="3">Số lượng: @ViewBag.count</td>
+            <td colspan="3">Total : @ViewBag.total.ToString("#,##0")</td>
+        </tr>
+        <tr style="font-weight:bold;text-align:right;color:red">
+            <td colspan="6">
+                <a asp-action="Index" asp-controller="Cart">Trở về giỏ hàng</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="margin: 3px 3px">
+    <h2 style="text-align:center">THÔNG TIN ĐẶT HÀNG</h2>
+    <form class="form-horizontal" style="margin-left: 300px" asp-controller="Cart" asp-action="Checkout" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="control-label col-sm-2" asp-for="CustomerName">Họ và tên</label>
+            <div class="col-sm-5">
+                <input type="text" asp-for="CustomerName" class="form-control" placeholder="Enter...">
+            </div>
+            <span asp-validation-for="CustomerName"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" asp-for="CustomerEmail">Email</label>
+            <div class="col-sm-5">
+                <input type="email" asp-for="CustomerEmail" class="form-control" placeholder="Enter...">
+            </div>
+            <span asp-validation-for="CustomerEmail"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" asp-for="CustomerPhone">Phone Number</label>
+            <div class="col-sm-5">
+                <input type="number" asp-for="CustomerPhone" class="form-control" placeholder="Enter...">
+            </div>
+            <span asp-validation-for="CustomerPhone"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" asp-for="CustomerAddress">Địa chỉ</label>
+            <div class="col-sm-5">
+                <input type="text" asp-for="CustomerAddress" class="form-control" placeholder="Enter...">
+            </div>
+            <span asp-validation-for="CustomerAddress"></span>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-7">
+                <button type="submit" class="btn btn-default">Đồng ý đặt hàng</button>
+            </div>
+        </div>
+    </form>
+</div>

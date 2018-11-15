@@ -23,12 +23,6 @@
                         <li data-thumb="../../@Model.Image">
                             <div class="thumb-image"> <img src="../../@Model.Image" data-imagezoom="true" class="img-responsive" alt=""> </div>
                         </li>
-                        <li data-thumb="../client/images/s2.jpg">
-                            <div class="thumb-image"> <img src="~/client/images/s2.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-                        </li>
-                        <li data-thumb="../client/images/s3.jpg">
-                            <div class="thumb-image"> <img src="~/client/images/s3.jpg" data-imagezoom="true" class="img-responsive" alt=""> </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +47,7 @@
                 @if (Model.PromotionPrice != null)
                 {
                     <h6 class="item_price"><del>@Model.Price.ToString("#,##0")</del></h6>
-                    <h6 class="item_price">@Html.DisplayFor(modelItem => Model.PromotionPrice)</h6>
+                    <h6 class="item_price">@Model.PromotionPrice.Value.ToString("#,##0")</h6>
                 }
                 else
                 {
@@ -65,7 +59,7 @@
                     <p class="qty"> Qty :  </p><input min="1" type="number" value="@Model.Quantity" class="item_quantity">
                 </div>
                 <div class="btn_form">
-                    <a href="#" class="add-cart item_add">ADD TO CART</a>
+                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.ID" class="add-cart item_add">ADD TO CART</a>
                 </div>
             </div>
             <div class="clearfix"> </div>
@@ -132,43 +126,6 @@
             </div>
         </div>
         <!--//collapse -->
-        <!--related-products-->
-        <div class="related-products">
-            <div class="title-info wow fadeInUp animated" data-wow-delay=".5s">
-                <h3 class="title">Related<span> Products</span></h3>
-            </div>
-            <div class="related-products-info">
-                <div class="col-md-3 new-grid simpleCart_shelfItem wow flipInY animated" data-wow-delay=".5s">
-                    <div class="new-top">
-                        <a asp-controller="Product" asp-action="Detail"><img src="~/client/images/g9.jpg" class="img-responsive" alt="" /></a>
-                        <div class="new-text">
-                            <ul>
-                                <li><a class="item_add" href=""> Add to cart</a></li>
-                                <li><a asp-controller="Product" asp-action="Detail">Quick View </a></li>
-                                <li><a asp-controller="Product" asp-action="Index">Show Details </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="new-bottom">
-                        <h5><a class="name" asp-controller="Product" asp-action="Detail">Baby Red Dress </a></h5>
-                        <div class="rating">
-                            <span class="on">☆</span>
-                            <span class="on">☆</span>
-                            <span class="on">☆</span>
-                            <span class="on">☆</span>
-                            <span>☆</span>
-                        </div>
-                        <div class="ofr">
-                            <p class="pric1"><del>$2000.00</del></p>
-                            <p><span class="item_price">$500</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-        <!--//related-products-->
     </div>
 </div>
 <!--//single-page-->
