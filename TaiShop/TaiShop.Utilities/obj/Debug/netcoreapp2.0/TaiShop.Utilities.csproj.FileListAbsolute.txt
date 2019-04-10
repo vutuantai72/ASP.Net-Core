@@ -1,0 +1,9 @@
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\bin\Debug\netcoreapp2.0\TaiShop.Utilities.deps.json
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\bin\Debug\netcoreapp2.0\TaiShop.Utilities.dll
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\bin\Debug\netcoreapp2.0\TaiShop.Utilities.pdb
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\obj\Debug\netcoreapp2.0\TaiShop.Utilities.csprojAssemblyReference.cache
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\obj\Debug\netcoreapp2.0\TaiShop.Utilities.csproj.CoreCompileInputs.cache
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\obj\Debug\netcoreapp2.0\TaiShop.Utilities.AssemblyInfoInputs.cache
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\obj\Debug\netcoreapp2.0\TaiShop.Utilities.AssemblyInfo.cs
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\obj\Debug\netcoreapp2.0\TaiShop.Utilities.dll
+E:\ASP.Net Core\TaiShop\TaiShop.Utilities\obj\Debug\netcoreapp2.0\TaiShop.Utilities.pdb

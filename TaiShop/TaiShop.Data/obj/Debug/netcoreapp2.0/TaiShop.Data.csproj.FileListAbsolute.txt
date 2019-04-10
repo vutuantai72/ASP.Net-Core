@@ -1,0 +1,12 @@
+E:\ASP.Net Core\TaiShop\TaiShop.Data\bin\Debug\netcoreapp2.0\TaiShop.Infrastructure.dll
+E:\ASP.Net Core\TaiShop\TaiShop.Data\obj\Debug\netcoreapp2.0\TaiShop.Data.csprojAssemblyReference.cache
+E:\ASP.Net Core\TaiShop\TaiShop.Data\obj\Debug\netcoreapp2.0\TaiShop.Data.csproj.CoreCompileInputs.cache
+E:\ASP.Net Core\TaiShop\TaiShop.Data\obj\Debug\netcoreapp2.0\TaiShop.Data.AssemblyInfoInputs.cache
+E:\ASP.Net Core\TaiShop\TaiShop.Data\obj\Debug\netcoreapp2.0\TaiShop.Data.AssemblyInfo.cs
+E:\ASP.Net Core\TaiShop\TaiShop.Data\bin\Debug\netcoreapp2.0\TaiShop.Data.deps.json
+E:\ASP.Net Core\TaiShop\TaiShop.Data\bin\Debug\netcoreapp2.0\TaiShop.Data.dll
+E:\ASP.Net Core\TaiShop\TaiShop.Data\bin\Debug\netcoreapp2.0\TaiShop.Data.pdb
+E:\ASP.Net Core\TaiShop\TaiShop.Data\bin\Debug\netcoreapp2.0\TaiShop.Infrastructure.pdb
+E:\ASP.Net Core\TaiShop\TaiShop.Data\obj\Debug\netcoreapp2.0\TaiShop.Data.csproj.CopyComplete
+E:\ASP.Net Core\TaiShop\TaiShop.Data\obj\Debug\netcoreapp2.0\TaiShop.Data.dll
+E:\ASP.Net Core\TaiShop\TaiShop.Data\obj\Debug\netcoreapp2.0\TaiShop.Data.pdb

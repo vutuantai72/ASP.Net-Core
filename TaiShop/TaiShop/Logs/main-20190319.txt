@@ -1,0 +1,493 @@
+2019-03-19T22:26:45.1969282+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:26:45.9418728+07:00  [INF] Executed DbCommand ("312"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:26:45.9880053+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:26:46.0108900+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:26:46.0944138+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-03-19T22:26:46.1529601+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-03-19T22:26:46.1671362+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-03-19T22:26:46.1867662+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-03-19T22:26:46.2128202+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-03-19T22:26:46.2337449+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-03-19T22:26:46.2752804+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-03-19T22:26:46.3230035+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:26:46.3616101+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:26:46.3962478+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:26:48.0698088+07:00 0HLLCFT6B13OJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/   (ca22a1cb)
+2019-03-19T22:26:48.7083054+07:00 0HLLCFT6B13OJ:00000001 [INF] Executing action method "TaiShop.Controllers.HomeController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:26:55.3713014+07:00 0HLLCFT6B13OJ:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-03-19T22:26:57.5112183+07:00 0HLLCFT6B13OL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2019-03-19T22:26:57.6604868+07:00 0HLLCFT6B13OL:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2019-03-19T22:26:57.7884263+07:00 0HLLCFT6B13OJ:00000001 [INF] Executed action "TaiShop.Controllers.HomeController.Index (TaiShop)" in 8500.4558ms (afa2e885)
+2019-03-19T22:26:57.9529157+07:00 0HLLCFT6B13OJ:00000001 [INF] Request finished in 9997.2433ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:26:58.1392847+07:00 0HLLCFT6B13OM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-03-19T22:26:58.1729176+07:00 0HLLCFT6B13ON:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-03-19T22:26:58.4735018+07:00 0HLLCFT6B13OL:00000001 [INF] Request finished in 393.1628ms 304 text/css (791a596a)
+2019-03-19T22:26:58.9072193+07:00 0HLLCFT6B13OM:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2019-03-19T22:26:59.2778000+07:00 0HLLCFT6B13ON:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2019-03-19T22:26:59.3456822+07:00 0HLLCFT6B13OJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2019-03-19T22:26:59.3753052+07:00 0HLLCFT6B13ON:00000001 [INF] Request finished in 1862.5104ms 304 application/javascript (791a596a)
+2019-03-19T22:26:59.3877067+07:00 0HLLCFT6B13OM:00000001 [INF] Request finished in 1501.3105ms 304 application/javascript (791a596a)
+2019-03-19T22:26:59.5680225+07:00 0HLLCFT6B13OJ:00000002 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2019-03-19T22:26:59.9831455+07:00 0HLLCFT6B13OJ:00000002 [INF] Request finished in 1090.9999ms 304 font/woff2 (791a596a)
+2019-03-19T22:27:32.8099512+07:00 0HLLCFT6B13OO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin   (ca22a1cb)
+2019-03-19T22:27:32.8521267+07:00 0HLLCFT6B13OO:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:27:33.6475405+07:00 0HLLCFT6B13OO:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-03-19T22:27:33.7204369+07:00 0HLLCFT6B13OO:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" in 867.563ms (afa2e885)
+2019-03-19T22:27:33.7499183+07:00 0HLLCFT6B13OP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin   (ca22a1cb)
+2019-03-19T22:27:33.7908629+07:00 0HLLCFT6B13OO:00000001 [INF] Request finished in 925.7953ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:27:33.8137754+07:00 0HLLCFT6B13OP:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:27:33.9027990+07:00 0HLLCFT6B13OP:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-03-19T22:27:34.0041989+07:00 0HLLCFT6B13OQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/nprogress/nprogress.css   (ca22a1cb)
+2019-03-19T22:27:34.1344855+07:00 0HLLCFT6B13OR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin-side/css/custom.css   (ca22a1cb)
+2019-03-19T22:27:34.1413907+07:00 0HLLCFT6B13OO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2019-03-19T22:27:34.1503848+07:00 0HLLCFT6B13OP:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" in 179.4496ms (afa2e885)
+2019-03-19T22:27:34.1988819+07:00 0HLLCFT6B13OO:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2019-03-19T22:27:34.2155002+07:00 0HLLCFT6B13OQ:00000001 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2019-03-19T22:27:34.2424574+07:00 0HLLCFT6B13OQ:00000001 [INF] Request finished in 327.9745ms 304 text/css (791a596a)
+2019-03-19T22:27:34.2501425+07:00 0HLLCFT6B13OR:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2019-03-19T22:27:34.2810178+07:00 0HLLCFT6B13OP:00000001 [INF] Request finished in 437.3531ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:27:34.3706644+07:00 0HLLCFT6B13OO:00000002 [INF] Request finished in 365.7127ms 304 text/css (791a596a)
+2019-03-19T22:27:34.4241373+07:00 0HLLCFT6B13OP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-03-19T22:27:34.4353219+07:00 0HLLCFT6B13OQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-03-19T22:27:34.4806087+07:00 0HLLCFT6B13OR:00000001 [INF] Request finished in 362.7133ms 304 text/css (791a596a)
+2019-03-19T22:27:34.5037243+07:00 0HLLCFT6B13OQ:00000002 [INF] The file "/lib/jquery-validation/dist/additional-methods.js" was not modified (f1f8d725)
+2019-03-19T22:27:34.5744699+07:00 0HLLCFT6B13OP:00000002 [INF] The file "/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2019-03-19T22:27:34.5972373+07:00 0HLLCFT6B13OR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/shared/main.js   (ca22a1cb)
+2019-03-19T22:27:34.6149879+07:00 0HLLCFT6B13OP:00000002 [INF] Request finished in 245.1038ms 304 application/javascript (791a596a)
+2019-03-19T22:27:34.6357362+07:00 0HLLCFT6B13OS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2019-03-19T22:27:34.6751983+07:00 0HLLCFT6B13OQ:00000002 [INF] Request finished in 137.1128ms 304 application/javascript (791a596a)
+2019-03-19T22:27:34.7007309+07:00 0HLLCFT6B13OO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-03-19T22:27:34.8007271+07:00 0HLLCFT6B13OS:00000001 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.css" was not modified (f1f8d725)
+2019-03-19T22:27:34.8327881+07:00 0HLLCFT6B13OQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2019-03-19T22:27:34.8562868+07:00 0HLLCFT6B13OR:00000002 [INF] The file "/app/shared/main.js" was not modified (f1f8d725)
+2019-03-19T22:27:34.8821330+07:00 0HLLCFT6B13OR:00000002 [INF] Request finished in 365.5523ms 304 application/javascript (791a596a)
+2019-03-19T22:27:34.9092340+07:00 0HLLCFT6B13OT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2019-03-19T22:27:34.9370697+07:00 0HLLCFT6B13OS:00000001 [INF] Request finished in 188.8239ms 304 text/css (791a596a)
+2019-03-19T22:27:34.9991387+07:00 0HLLCFT6B13OO:00000003 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2019-03-19T22:27:35.0560983+07:00 0HLLCFT6B13OR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2019-03-19T22:27:35.0806141+07:00 0HLLCFT6B13OQ:00000003 [INF] The file "/lib/notifyjs/dist/styles/metro/notify-metro.js" was not modified (f1f8d725)
+2019-03-19T22:27:35.1666545+07:00 0HLLCFT6B13OT:00000001 [INF] The file "/lib/notifyjs/dist/notify.js" was not modified (f1f8d725)
+2019-03-19T22:27:35.2290584+07:00 0HLLCFT6B13OR:00000003 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2019-03-19T22:27:35.2535243+07:00 0HLLCFT6B13OR:00000003 [INF] Request finished in 223.3652ms 304 font/woff2 (791a596a)
+2019-03-19T22:27:35.2901537+07:00 0HLLCFT6B13OO:00000003 [INF] Request finished in 475.7638ms 304 application/javascript (791a596a)
+2019-03-19T22:27:35.3146891+07:00 0HLLCFT6B13OT:00000001 [INF] Request finished in 403.4873ms 304 application/javascript (791a596a)
+2019-03-19T22:27:35.3363527+07:00 0HLLCFT6B13OQ:00000003 [INF] Request finished in 392.2147ms 304 application/javascript (791a596a)
+2019-03-19T22:27:40.8559104+07:00 0HLLCFT6B13OU:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-03-19T22:27:41.0249870+07:00 0HLLCFT6B13OU:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:27:41.1222333+07:00 0HLLCFT6B13OU:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:27:41.2521077+07:00 0HLLCFT6B13OU:00000001 [INF] Executed DbCommand ("75"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-03-19T22:27:41.4186072+07:00 0HLLCFT6B13OU:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-03-19T22:27:41.4879674+07:00 0HLLCFT6B13OU:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-19T22:27:41.5338602+07:00 0HLLCFT6B13OU:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-03-19T22:27:41.6389112+07:00 0HLLCFT6B13OU:00000001 [INF] Executed DbCommand ("50"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-03-19T22:27:41.6616175+07:00 0HLLCFT6B13OU:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-19T22:27:41.6858709+07:00 0HLLCFT6B13OU:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-03-19T22:27:41.7070306+07:00 0HLLCFT6B13OU:00000001 [INF] User logged in. (fdce0db4)
+2019-03-19T22:27:41.7657187+07:00 0HLLCFT6B13OU:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:27:41.8295075+07:00 0HLLCFT6B13OU:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 883.4824ms (afa2e885)
+2019-03-19T22:27:41.8394010+07:00 0HLLCFT6B13OU:00000001 [INF] Request finished in 987.9432ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-19T22:27:41.8554241+07:00 0HLLCFT6B13OU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/Admin/Home/Index   (ca22a1cb)
+2019-03-19T22:27:41.8793012+07:00 0HLLCFT6B13OU:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:27:41.9428963+07:00 0HLLCFT6B13OU:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:27:41.9726115+07:00 0HLLCFT6B13OU:00000002 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.HomeController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:27:42.2794336+07:00 0HLLCFT6B13OU:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-03-19T22:27:42.7624170+07:00 0HLLCFT6B13OU:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:27:42.8669944+07:00 0HLLCFT6B13OU:00000002 [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-19T22:27:43.5762227+07:00 0HLLCFT6B13OU:00000002 [INF] Executed action "TaiShop.Areas.Admin.Controllers.HomeController.Index (TaiShop)" in 1678.8798ms (afa2e885)
+2019-03-19T22:27:43.7109849+07:00 0HLLCFT6B13OV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2019-03-19T22:27:43.7510255+07:00 0HLLCFT6B13P0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2019-03-19T22:27:43.7931592+07:00 0HLLCFT6B13OU:00000002 [INF] Request finished in 1758.1421ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:27:43.8369878+07:00 0HLLCFT6B13OV:00000001 [INF] The file "/lib/ckeditor/skins/moono/editor.css" was not modified (f1f8d725)
+2019-03-19T22:27:43.9013133+07:00 0HLLCFT6B13OU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-03-19T22:27:43.9169993+07:00 0HLLCFT6B13P0:00000001 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2019-03-19T22:27:43.9415263+07:00 0HLLCFT6B13P1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/nprogress/nprogress.js   (ca22a1cb)
+2019-03-19T22:27:44.0551490+07:00 0HLLCFT6B13OU:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2019-03-19T22:27:44.0754672+07:00 0HLLCFT6B13OV:00000001 [INF] Request finished in 209.3799ms 304 text/css (791a596a)
+2019-03-19T22:27:44.0974449+07:00 0HLLCFT6B13P1:00000001 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2019-03-19T22:27:44.1637954+07:00 0HLLCFT6B13P0:00000001 [INF] Request finished in 209.6743ms 304 application/javascript (791a596a)
+2019-03-19T22:27:44.2128570+07:00 0HLLCFT6B13OU:00000003 [INF] Request finished in 252.3832ms 304 text/css (791a596a)
+2019-03-19T22:27:44.2550774+07:00 0HLLCFT6B13P0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-03-19T22:27:44.2757016+07:00 0HLLCFT6B13OV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2019-03-19T22:27:44.4069742+07:00 0HLLCFT6B13OV:00000002 [INF] The file "/lib/twbs-pagination/jquery.twbsPagination.js" was not modified (f1f8d725)
+2019-03-19T22:27:44.4464268+07:00 0HLLCFT6B13OV:00000002 [INF] Request finished in 250.5003ms 304 application/javascript (791a596a)
+2019-03-19T22:27:44.4522806+07:00 0HLLCFT6B13P0:00000002 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2019-03-19T22:27:44.4670292+07:00 0HLLCFT6B13P1:00000001 [INF] Request finished in 396.5706ms 304 application/javascript (791a596a)
+2019-03-19T22:27:44.4886916+07:00 0HLLCFT6B13OV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-03-19T22:27:44.4948300+07:00 0HLLCFT6B13OU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/ckeditor/ckeditor.js   (ca22a1cb)
+2019-03-19T22:27:44.5150126+07:00 0HLLCFT6B13P0:00000002 [INF] Request finished in 222.8792ms 304 application/javascript (791a596a)
+2019-03-19T22:27:44.5588330+07:00 0HLLCFT6B13OU:00000004 [INF] The file "/lib/ckeditor/ckeditor.js" was not modified (f1f8d725)
+2019-03-19T22:27:44.5810188+07:00 0HLLCFT6B13OU:00000004 [INF] Request finished in 240.0555ms 304 application/javascript (791a596a)
+2019-03-19T22:27:44.6595443+07:00 0HLLCFT6B13OV:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2019-03-19T22:27:44.6951492+07:00 0HLLCFT6B13OV:00000003 [INF] Request finished in 183.0123ms 304 application/javascript (791a596a)
+2019-03-19T22:27:44.7642103+07:00 0HLLCFT6B13P2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/mustache/mustache.js   (ca22a1cb)
+2019-03-19T22:27:44.8184901+07:00 0HLLCFT6B13P3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-03-19T22:27:44.8340643+07:00 0HLLCFT6B13P1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/moment/moment.js   (ca22a1cb)
+2019-03-19T22:27:44.8416039+07:00 0HLLCFT6B13P0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootbox/bootbox.js   (ca22a1cb)
+2019-03-19T22:27:44.8711664+07:00 0HLLCFT6B13P3:00000001 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2019-03-19T22:27:44.9012502+07:00 0HLLCFT6B13P1:00000002 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2019-03-19T22:27:44.9280526+07:00 0HLLCFT6B13P2:00000001 [INF] The file "/lib/mustache/mustache.js" was not modified (f1f8d725)
+2019-03-19T22:27:45.0261808+07:00 0HLLCFT6B13P0:00000003 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2019-03-19T22:27:45.0523939+07:00 0HLLCFT6B13P0:00000003 [INF] Request finished in 390.1266ms 304 application/javascript (791a596a)
+2019-03-19T22:27:45.0731863+07:00 0HLLCFT6B13P3:00000001 [INF] Request finished in 138.5429ms 304 application/javascript (791a596a)
+2019-03-19T22:27:45.0933215+07:00 0HLLCFT6B13P2:00000001 [INF] Request finished in 225.4311ms 304 application/javascript (791a596a)
+2019-03-19T22:27:45.1026391+07:00 0HLLCFT6B13P1:00000002 [INF] Request finished in 360.9337ms 304 application/javascript (791a596a)
+2019-03-19T22:27:49.4629388+07:00 0HLLCFT6B13P4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/bill/index   (ca22a1cb)
+2019-03-19T22:27:49.4921198+07:00 0HLLCFT6B13P4:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:27:49.5018064+07:00 0HLLCFT6B13P4:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:27:49.5158518+07:00 0HLLCFT6B13P4:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.BillController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:27:49.8918265+07:00 0HLLCFT6B13P4:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Bill/Index.cshtml". (9707eebe)
+2019-03-19T22:27:50.1337017+07:00 0HLLCFT6B13P4:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:27:50.1511810+07:00 0HLLCFT6B13P4:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-19T22:27:50.2056352+07:00 0HLLCFT6B13P4:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.BillController.Index (TaiShop)" in 666.7706ms (afa2e885)
+2019-03-19T22:27:50.2967917+07:00 0HLLCFT6B13P6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.js   (ca22a1cb)
+2019-03-19T22:27:50.3483510+07:00 0HLLCFT6B13P7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/controllers/bill/index.js   (ca22a1cb)
+2019-03-19T22:27:50.3527675+07:00 0HLLCFT6B13P5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css   (ca22a1cb)
+2019-03-19T22:27:50.3736208+07:00 0HLLCFT6B13P4:00000001 [INF] Request finished in 773.9173ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:27:50.3791183+07:00 0HLLCFT6B13P5:00000001 [INF] Sending file. Request path: '"/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootstrap-datepicker\dist\css\bootstrap-datepicker.css"' (27b0a520)
+2019-03-19T22:27:50.3901976+07:00 0HLLCFT6B13P7:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:27:50.4444590+07:00 0HLLCFT6B13P6:00000001 [INF] Sending file. Request path: '"/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootstrap-datepicker\dist\js\bootstrap-datepicker.js"' (27b0a520)
+2019-03-19T22:27:50.4532683+07:00 0HLLCFT6B13P7:00000001 [INF] Request finished in 135.7875ms 404  (791a596a)
+2019-03-19T22:27:50.5365464+07:00 0HLLCFT6B13P5:00000001 [INF] Request finished in 263.7274ms 200 text/css (791a596a)
+2019-03-19T22:27:50.5891336+07:00 0HLLCFT6B13P6:00000001 [INF] Request finished in 287.9109ms 200 application/javascript (791a596a)
+2019-03-19T22:27:50.6234880+07:00 0HLLCFT6B13P6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/controllers/bill/index.js   (ca22a1cb)
+2019-03-19T22:27:50.6373431+07:00 0HLLCFT6B13P6:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:27:50.6508445+07:00 0HLLCFT6B13P6:00000002 [INF] Request finished in 22.4533ms 404  (791a596a)
+2019-03-19T22:27:55.0401793+07:00 0HLLCFT6B13P6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css.map   (ca22a1cb)
+2019-03-19T22:27:55.0962297+07:00 0HLLCFT6B13P6:00000003 [INF] Sending file. Request path: '"/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css.map"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootstrap-datepicker\dist\css\bootstrap-datepicker.css.map"' (27b0a520)
+2019-03-19T22:27:55.1371394+07:00 0HLLCFT6B13P5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2019-03-19T22:27:55.1907257+07:00 0HLLCFT6B13P6:00000003 [INF] Request finished in 189.3509ms 200 text/plain (791a596a)
+2019-03-19T22:27:55.2157352+07:00 0HLLCFT6B13P5:00000002 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2019-03-19T22:27:55.2534189+07:00 0HLLCFT6B13P5:00000002 [INF] Request finished in 227.6894ms 304 text/plain (791a596a)
+2019-03-19T22:34:23.9045855+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:34:24.3092551+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:34:24.3318437+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:34:24.3411881+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:34:24.3813630+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-03-19T22:34:24.4658879+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-03-19T22:34:24.4948492+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-03-19T22:34:24.5272358+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-03-19T22:34:24.5585791+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-03-19T22:34:24.6014954+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-03-19T22:34:24.6372658+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-03-19T22:34:24.6523246+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:34:24.6665843+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:34:24.6909205+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-03-19T22:34:25.7800017+07:00 0HLLCG1ERVB1R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/   (ca22a1cb)
+2019-03-19T22:34:25.9284873+07:00 0HLLCG1ERVB1R:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:34:26.4034392+07:00 0HLLCG1ERVB1R:00000001 [INF] Executing action method "TaiShop.Controllers.HomeController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:34:30.8088303+07:00 0HLLCG1ERVB1R:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-03-19T22:34:31.9185805+07:00 0HLLCG1ERVB1R:00000001 [INF] Executed action "TaiShop.Controllers.HomeController.Index (TaiShop)" in 5501.4922ms (afa2e885)
+2019-03-19T22:34:31.9369511+07:00 0HLLCG1ERVB1R:00000001 [INF] Request finished in 6241.7852ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:58:17.9533985+07:00 0HLLCG1ERVB1T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin   (ca22a1cb)
+2019-03-19T22:58:18.2402612+07:00 0HLLCG1ERVB1T:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:18.6618557+07:00 0HLLCG1ERVB1T:00000001 [INF] Executed DbCommand ("126"ms) [Parameters=["@__get_Item_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2019-03-19T22:58:18.8264370+07:00 0HLLCG1ERVB1T:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-03-19T22:58:18.9200725+07:00 0HLLCG1ERVB1T:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-19T22:58:18.9814676+07:00 0HLLCG1ERVB1T:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-03-19T22:58:19.0809689+07:00 0HLLCG1ERVB1T:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-03-19T22:58:19.1248759+07:00 0HLLCG1ERVB1T:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-19T22:58:19.1659310+07:00 0HLLCG1ERVB1T:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:19.2459891+07:00 0HLLCG1ERVB1T:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:20.4493757+07:00 0HLLCG1ERVB1T:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-03-19T22:58:20.5385409+07:00 0HLLCG1ERVB1T:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" in 1316.1238ms (afa2e885)
+2019-03-19T22:58:20.5740499+07:00 0HLLCG1ERVB1T:00000001 [INF] Request finished in 2649.1548ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:58:27.1170944+07:00 0HLLCG1ERVB1T:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-03-19T22:58:27.1271402+07:00 0HLLCG1ERVB1T:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:27.3184347+07:00 0HLLCG1ERVB1T:00000002 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:27.3745353+07:00 0HLLCG1ERVB1T:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:27.3998205+07:00 0HLLCG1ERVB1T:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-03-19T22:58:27.4719801+07:00 0HLLCG1ERVB1T:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-03-19T22:58:27.4819248+07:00 0HLLCG1ERVB1T:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-19T22:58:27.4950704+07:00 0HLLCG1ERVB1T:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-03-19T22:58:27.5270696+07:00 0HLLCG1ERVB1T:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-03-19T22:58:27.5380554+07:00 0HLLCG1ERVB1T:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-03-19T22:58:27.5716140+07:00 0HLLCG1ERVB1T:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-03-19T22:58:27.5803927+07:00 0HLLCG1ERVB1T:00000002 [INF] User logged in. (fdce0db4)
+2019-03-19T22:58:27.5984940+07:00 0HLLCG1ERVB1T:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:58:27.7241803+07:00 0HLLCG1ERVB1T:00000002 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 495.9524ms (afa2e885)
+2019-03-19T22:58:27.7386691+07:00 0HLLCG1ERVB1T:00000002 [INF] Request finished in 620.9013ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-19T22:58:27.7796641+07:00 0HLLCG1ERVB1T:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/Admin/Home/Index   (ca22a1cb)
+2019-03-19T22:58:27.8068965+07:00 0HLLCG1ERVB1T:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:27.9016702+07:00 0HLLCG1ERVB1T:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:27.9312716+07:00 0HLLCG1ERVB1T:00000003 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.HomeController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:28.2541896+07:00 0HLLCG1ERVB1T:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-03-19T22:58:28.8332124+07:00 0HLLCG1ERVB1T:00000003 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:28.9148628+07:00 0HLLCG1ERVB1T:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-19T22:58:29.6641845+07:00 0HLLCG1ERVB1T:00000003 [INF] Executed action "TaiShop.Areas.Admin.Controllers.HomeController.Index (TaiShop)" in 1837.0687ms (afa2e885)
+2019-03-19T22:58:29.7058584+07:00 0HLLCG1ERVB1T:00000003 [INF] Request finished in 1913.5901ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:58:31.4628609+07:00 0HLLCG1ERVB1T:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/bill/index   (ca22a1cb)
+2019-03-19T22:58:31.4823575+07:00 0HLLCG1ERVB1T:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:31.4992564+07:00 0HLLCG1ERVB1T:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:31.5294615+07:00 0HLLCG1ERVB1T:00000004 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.BillController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:31.8442435+07:00 0HLLCG1ERVB1T:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Bill/Index.cshtml". (9707eebe)
+2019-03-19T22:58:32.1154739+07:00 0HLLCG1ERVB1T:00000004 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:32.1312776+07:00 0HLLCG1ERVB1T:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-19T22:58:32.3317095+07:00 0HLLCG1ERVB1T:00000004 [INF] Executed action "TaiShop.Areas.Admin.Controllers.BillController.Index (TaiShop)" in 750.5424ms (afa2e885)
+2019-03-19T22:58:32.3962484+07:00 0HLLCG1ERVB1T:00000004 [INF] Request finished in 907.2955ms 200 text/html; charset=utf-8 (791a596a)
+2019-03-19T22:58:32.3989262+07:00 0HLLCG1ERVB20:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/controllers/bill/index.js?v=jJI3NwGJuuo58GX_nzuzhRjF6aPhCOjg5OrZf6zLD8s   (ca22a1cb)
+2019-03-19T22:58:32.4333044+07:00 0HLLCG1ERVB20:00000001 [INF] Sending file. Request path: '"/app/controllers/bill/index.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\app\controllers\bill\index.js"' (27b0a520)
+2019-03-19T22:58:32.4789531+07:00 0HLLCG1ERVB20:00000001 [INF] Request finished in 157.8445ms 200 application/javascript (791a596a)
+2019-03-19T22:58:32.6266540+07:00 0HLLCG1ERVB20:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/bill/GetBillStatus   (ca22a1cb)
+2019-03-19T22:58:32.6675018+07:00 0HLLCG1ERVB22:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/Admin/Product/GetAll   (ca22a1cb)
+2019-03-19T22:58:32.6819044+07:00 0HLLCG1ERVB23:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/Admin/Bill/GetSizes   (ca22a1cb)
+2019-03-19T22:58:32.7035872+07:00 0HLLCG1ERVB21:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/Admin/Bill/GetColors   (ca22a1cb)
+2019-03-19T22:58:32.7508524+07:00 0HLLCG1ERVB1T:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/bill/GetPaymentMethod   (ca22a1cb)
+2019-03-19T22:58:32.7874336+07:00 0HLLCG1ERVB22:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:32.8197255+07:00 0HLLCG1ERVB23:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:32.8358620+07:00 0HLLCG1ERVB20:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:32.9023499+07:00 0HLLCG1ERVB23:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:32.9198514+07:00 0HLLCG1ERVB21:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:32.9650116+07:00 0HLLCG1ERVB22:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:33.0010457+07:00 0HLLCG1ERVB1T:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:33.0629444+07:00 0HLLCG1ERVB23:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.BillController.GetSizes (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:33.1269926+07:00 0HLLCG1ERVB22:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.ProductController.GetAll (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:33.1522205+07:00 0HLLCG1ERVB1T:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:33.1690509+07:00 0HLLCG1ERVB22:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:33.1755337+07:00 0HLLCG1ERVB21:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:33.1802893+07:00 0HLLCG1ERVB20:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:33.2110302+07:00 0HLLCG1ERVB23:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:33.2514794+07:00 0HLLCG1ERVB21:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.BillController.GetColors (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:33.3114480+07:00 0HLLCG1ERVB1T:00000005 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.BillController.GetPaymentMethod (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:33.3306688+07:00 0HLLCG1ERVB21:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:33.3409490+07:00 0HLLCG1ERVB23:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name]
+FROM [Sizes] AS [dto]" (0723d8ff)
+2019-03-19T22:58:33.3665980+07:00 0HLLCG1ERVB20:00000002 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.BillController.GetBillStatus (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:33.3728589+07:00 0HLLCG1ERVB23:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:58:33.4125774+07:00 0HLLCG1ERVB23:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.BillController.GetSizes (TaiShop)" in 549.1245ms (afa2e885)
+2019-03-19T22:58:33.4853855+07:00 0HLLCG1ERVB23:00000001 [INF] Request finished in 948.5828ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-19T22:58:33.5235876+07:00 0HLLCG1ERVB1T:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:58:33.6746195+07:00 0HLLCG1ERVB22:00000001 [INF] Executed DbCommand ("93"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[SortOrder], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId]" (0723d8ff)
+2019-03-19T22:58:33.7050933+07:00 0HLLCG1ERVB21:00000001 [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[Code]
+FROM [Colors] AS [dto]" (0723d8ff)
+2019-03-19T22:58:33.7282131+07:00 0HLLCG1ERVB1T:00000005 [INF] Executed action "TaiShop.Areas.Admin.Controllers.BillController.GetPaymentMethod (TaiShop)" in 522.6135ms (afa2e885)
+2019-03-19T22:58:33.7746511+07:00 0HLLCG1ERVB21:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:58:33.7792920+07:00 0HLLCG1ERVB1T:00000005 [INF] Request finished in 1269.0714ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-19T22:58:33.8160284+07:00 0HLLCG1ERVB20:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:58:33.8398633+07:00 0HLLCG1ERVB20:00000002 [INF] Executed action "TaiShop.Areas.Admin.Controllers.BillController.GetBillStatus (TaiShop)" in 980.4889ms (afa2e885)
+2019-03-19T22:58:33.8494825+07:00 0HLLCG1ERVB21:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.BillController.GetColors (TaiShop)" in 889.1592ms (afa2e885)
+2019-03-19T22:58:33.8598420+07:00 0HLLCG1ERVB20:00000002 [INF] Request finished in 1304.6473ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-19T22:58:33.9041880+07:00 0HLLCG1ERVB21:00000001 [INF] Request finished in 1382.1953ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-19T22:58:33.9682457+07:00 0HLLCG1ERVB22:00000001 [INF] Executed DbCommand ("146"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-03-19T22:58:33.9821597+07:00 0HLLCG1ERVB22:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-03-19T22:58:33.9985987+07:00 0HLLCG1ERVB22:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-03-19T22:58:34.0518459+07:00 0HLLCG1ERVB22:00000001 [INF] Executed DbCommand ("39"ms) [Parameters=["@_outer_Id='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[CategoryId], [dto].[Image], [dto].[Price], [dto].[PromotionPrice], [dto].[OriginalPrice], [dto].[Description], [dto].[Content], [dto].[HomeFlag], [dto].[HotFlag], [dto].[ViewCount], [dto].[Tags], [dto].[Unit], [dto].[DateCreated], [dto].[DateModified], [dto].[SeoPageTitle], [dto].[SeoAlias], [dto].[SeoKeywords], [dto].[SeoDescription], [dto].[Status]
+FROM [Products] AS [dto]
+WHERE @_outer_Id = [dto].[CategoryId]" (0723d8ff)
+2019-03-19T22:58:34.0909388+07:00 0HLLCG1ERVB22:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:58:34.1777950+07:00 0HLLCG1ERVB22:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.ProductController.GetAll (TaiShop)" in 1373.5566ms (afa2e885)
+2019-03-19T22:58:34.2063121+07:00 0HLLCG1ERVB22:00000001 [INF] Request finished in 1710.5965ms 200 application/json; charset=utf-8 (791a596a)
+2019-03-19T22:58:34.2352465+07:00 0HLLCG1ERVB22:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/bill/GetAllPaging?startDate=&endDate=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2019-03-19T22:58:34.2643089+07:00 0HLLCG1ERVB22:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-03-19T22:58:34.2761003+07:00 0HLLCG1ERVB22:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-03-19T22:58:34.3398447+07:00 0HLLCG1ERVB22:00000002 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.BillController.GetAllPaging (TaiShop)" with arguments (["", "", "", "1", "10"]) - ModelState is Valid (ba7f4ac2)
+2019-03-19T22:58:34.3691789+07:00 0HLLCG1ERVB22:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-03-19T22:58:34.3860067+07:00 0HLLCG1ERVB22:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Bills] AS [b]" (0723d8ff)
+2019-03-19T22:58:34.4709321+07:00 0HLLCG1ERVB22:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__p_0='?', @__p_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CustomerName], [x].[CustomerAddress], [x].[CustomerMobile], [x].[CustomerMessage], [x].[PaymentMethod], [x].[BillStatus], [x].[DateCreated], [x].[DateModified], [x].[Status], [x].[CustomerId]
+FROM [Bills] AS [x]
+ORDER BY [x].[DateCreated] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2019-03-19T22:58:34.4780651+07:00 0HLLCG1ERVB22:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-03-19T22:58:34.5292392+07:00 0HLLCG1ERVB22:00000002 [INF] Executed action "TaiShop.Areas.Admin.Controllers.BillController.GetAllPaging (TaiShop)" in 216.8256ms (afa2e885)
+2019-03-19T22:58:34.5573808+07:00 0HLLCG1ERVB22:00000002 [INF] Request finished in 329.7106ms 200 application/json; charset=utf-8 (791a596a)

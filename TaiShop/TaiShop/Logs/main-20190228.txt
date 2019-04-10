@@ -1,0 +1,381 @@
+2019-02-28T21:59:48.2636002+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-02-28T21:59:49.1074183+07:00  [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T21:59:49.1597051+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T21:59:49.1755105+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T21:59:49.2243788+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-28T21:59:49.2928182+07:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-28T21:59:49.3182463+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-28T21:59:49.3477866+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-28T21:59:49.3794618+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-28T21:59:49.4247470+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-28T21:59:49.4700922+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-28T21:59:49.5140884+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T21:59:49.5459984+07:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T21:59:49.5947173+07:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T21:59:56.4224378+07:00 0HLKTHLHHRIQI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/   (ca22a1cb)
+2019-02-28T21:59:57.2125149+07:00 0HLKTHLHHRIQI:00000001 [INF] Executing action method "TaiShop.Controllers.HomeController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-28T22:00:06.2049497+07:00 0HLKTHLHHRIQI:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-28T22:00:08.1516940+07:00 0HLKTHLHHRIQI:00000001 [INF] Executed action "TaiShop.Controllers.HomeController.Index (TaiShop)" in 10898.5591ms (afa2e885)
+2019-02-28T22:00:08.2265096+07:00 0HLKTHLHHRIQL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/images/banner2.svg   (ca22a1cb)
+2019-02-28T22:00:08.2869708+07:00 0HLKTHLHHRIQM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/images/banner1.svg   (ca22a1cb)
+2019-02-28T22:00:08.2959082+07:00 0HLKTHLHHRIQK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/css/site.css   (ca22a1cb)
+2019-02-28T22:00:08.3107715+07:00 0HLKTHLHHRIQL:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\images\banner2.svg"' (27b0a520)
+2019-02-28T22:00:08.3838071+07:00 0HLKTHLHHRIQM:00000001 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\images\banner1.svg"' (27b0a520)
+2019-02-28T22:00:08.5131711+07:00 0HLKTHLHHRIQI:00000001 [INF] Request finished in 12575.6044ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-28T22:00:08.6781993+07:00 0HLKTHLHHRIQO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-28T22:00:08.7579438+07:00 0HLKTHLHHRIQK:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\css\site.css"' (27b0a520)
+2019-02-28T22:00:08.8509576+07:00 0HLKTHLHHRIQL:00000001 [INF] Request finished in 250.1926ms 200 image/svg+xml (791a596a)
+2019-02-28T22:00:08.8819160+07:00 0HLKTHLHHRIQO:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2019-02-28T22:00:08.9113449+07:00 0HLKTHLHHRIQN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2019-02-28T22:00:08.9466470+07:00 0HLKTHLHHRIQK:00000001 [INF] Request finished in 682.6513ms 200 text/css (791a596a)
+2019-02-28T22:00:09.0024255+07:00 0HLKTHLHHRIQI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-28T22:00:09.0631670+07:00 0HLKTHLHHRIQM:00000001 [INF] Request finished in 911.0024ms 200 image/svg+xml (791a596a)
+2019-02-28T22:00:09.0907331+07:00 0HLKTHLHHRIQN:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2019-02-28T22:00:09.2462070+07:00 0HLKTHLHHRIQI:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2019-02-28T22:00:09.3112976+07:00 0HLKTHLHHRIQM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/images/banner4.svg   (ca22a1cb)
+2019-02-28T22:00:09.5109349+07:00 0HLKTHLHHRIQN:00000001 [INF] Request finished in 620.6656ms 304 text/css (791a596a)
+2019-02-28T22:00:09.5319811+07:00 0HLKTHLHHRIQK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/images/banner3.svg   (ca22a1cb)
+2019-02-28T22:00:09.5501588+07:00 0HLKTHLHHRIQL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2019-02-28T22:00:09.6188117+07:00 0HLKTHLHHRIQM:00000002 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\images\banner4.svg"' (27b0a520)
+2019-02-28T22:00:09.6564632+07:00 0HLKTHLHHRIQK:00000002 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\images\banner3.svg"' (27b0a520)
+2019-02-28T22:00:09.9106209+07:00 0HLKTHLHHRIQK:00000002 [INF] Request finished in 610.3266ms 200 image/svg+xml (791a596a)
+2019-02-28T22:00:09.9591556+07:00 0HLKTHLHHRIQN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2019-02-28T22:00:09.9856025+07:00 0HLKTHLHHRIQL:00000002 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\js\site.js"' (27b0a520)
+2019-02-28T22:00:10.0245217+07:00 0HLKTHLHHRIQO:00000001 [INF] Request finished in 1046.3428ms 200 application/javascript (791a596a)
+2019-02-28T22:00:10.0730307+07:00 0HLKTHLHHRIQM:00000002 [INF] Request finished in 505.7122ms 200 image/svg+xml (791a596a)
+2019-02-28T22:00:10.2014420+07:00 0HLKTHLHHRIQN:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2019-02-28T22:00:10.2238702+07:00 0HLKTHLHHRIQI:00000002 [INF] Request finished in 1325.722ms 200 application/javascript (791a596a)
+2019-02-28T22:00:10.2408643+07:00 0HLKTHLHHRIQL:00000002 [INF] Request finished in 994.9162ms 200 application/javascript (791a596a)
+2019-02-28T22:00:10.4275489+07:00 0HLKTHLHHRIQN:00000002 [INF] Request finished in 573.6396ms 200 font/woff2 (791a596a)
+2019-02-28T22:00:37.5006105+07:00 0HLKTHLHHRIQP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/login   (ca22a1cb)
+2019-02-28T22:00:37.5294728+07:00 0HLKTHLHHRIQP:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-28T22:00:38.0491080+07:00 0HLKTHLHHRIQP:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-28T22:00:38.1032878+07:00 0HLKTHLHHRIQP:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" in 588.3494ms (afa2e885)
+2019-02-28T22:00:38.1230975+07:00 0HLKTHLHHRIQP:00000001 [INF] Request finished in 631.3962ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-28T22:00:38.1859468+07:00 0HLKTHLHHRIQR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/shared/main.js   (ca22a1cb)
+2019-02-28T22:00:38.2246834+07:00 0HLKTHLHHRIQQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2019-02-28T22:00:38.2845926+07:00 0HLKTHLHHRIQS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2019-02-28T22:00:38.3056379+07:00 0HLKTHLHHRIQP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/animate.css/animate.css   (ca22a1cb)
+2019-02-28T22:00:38.3508248+07:00 0HLKTHLHHRIQP:00000002 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2019-02-28T22:00:38.3535206+07:00 0HLKTHLHHRIQQ:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2019-02-28T22:00:38.4045712+07:00 0HLKTHLHHRIQR:00000001 [INF] Sending file. Request path: '"/app/shared/main.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\app\shared\main.js"' (27b0a520)
+2019-02-28T22:00:38.4388073+07:00 0HLKTHLHHRIQQ:00000001 [INF] Request finished in 272.7121ms 200 text/css (791a596a)
+2019-02-28T22:00:38.4811733+07:00 0HLKTHLHHRIQS:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2019-02-28T22:00:38.4872020+07:00 0HLKTHLHHRIQR:00000001 [INF] Request finished in 330.4371ms 200 application/javascript (791a596a)
+2019-02-28T22:00:38.5079440+07:00 0HLKTHLHHRIQR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/nprogress/nprogress.css   (ca22a1cb)
+2019-02-28T22:00:38.5329082+07:00 0HLKTHLHHRIQT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/controllers/login/index.js   (ca22a1cb)
+2019-02-28T22:00:38.5674269+07:00 0HLKTHLHHRIQR:00000002 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2019-02-28T22:00:38.5928558+07:00 0HLKTHLHHRIQR:00000002 [INF] Request finished in 78.1696ms 304 text/css (791a596a)
+2019-02-28T22:00:38.6594794+07:00 0HLKTHLHHRIQQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin-side/css/custom.css   (ca22a1cb)
+2019-02-28T22:00:38.6995425+07:00 0HLKTHLHHRIQU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2019-02-28T22:00:38.7308919+07:00 0HLKTHLHHRIQR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2019-02-28T22:00:38.8535585+07:00 0HLKTHLHHRIQQ:00000002 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2019-02-28T22:00:38.8801740+07:00 0HLKTHLHHRIQT:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2019-02-28T22:00:38.8899536+07:00 0HLKTHLHHRIQQ:00000002 [INF] Request finished in 222.0036ms 304 text/css (791a596a)
+2019-02-28T22:00:38.9308065+07:00 0HLKTHLHHRIQR:00000003 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2019-02-28T22:00:39.0677861+07:00 0HLKTHLHHRIQT:00000001 [INF] Request finished in 531.8745ms 200 application/javascript (791a596a)
+2019-02-28T22:00:39.0764120+07:00 0HLKTHLHHRIQU:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2019-02-28T22:00:39.1513625+07:00 0HLKTHLHHRIQR:00000003 [INF] Request finished in 331.8634ms 304 text/css (791a596a)
+2019-02-28T22:00:39.1513881+07:00 0HLKTHLHHRIQP:00000002 [INF] Request finished in 926.3313ms 200 text/css (791a596a)
+2019-02-28T22:00:39.1713671+07:00 0HLKTHLHHRIQS:00000001 [INF] Request finished in 761.9306ms 200 application/javascript (791a596a)
+2019-02-28T22:00:39.2522593+07:00 0HLKTHLHHRIQU:00000001 [INF] Request finished in 574.4251ms 200 application/javascript (791a596a)
+2019-02-28T22:00:39.2884663+07:00 0HLKTHLHHRIQP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2019-02-28T22:00:39.3542411+07:00 0HLKTHLHHRIQP:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2019-02-28T22:00:39.4221725+07:00 0HLKTHLHHRIQP:00000003 [INF] Request finished in 173.1955ms 200 font/woff2 (791a596a)
+2019-02-28T22:01:22.4735184+07:00 0HLKTHLHHRIQV:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:22.6233535+07:00 0HLKTHLHHRIQV:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:22.7338154+07:00 0HLKTHLHHRIQV:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:22.8283438+07:00 0HLKTHLHHRIQV:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 277.344ms (afa2e885)
+2019-02-28T22:01:22.8602414+07:00 0HLKTHLHHRIQV:00000001 [INF] Request finished in 384.9395ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:25.8477529+07:00 0HLKTHLHHRIQV:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:25.8799039+07:00 0HLKTHLHHRIQV:00000002 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:25.8868432+07:00 0HLKTHLHHRIQV:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:25.8933094+07:00 0HLKTHLHHRIQV:00000002 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 39.0967ms (afa2e885)
+2019-02-28T22:01:25.9007756+07:00 0HLKTHLHHRIQV:00000002 [INF] Request finished in 72.9288ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:26.4885431+07:00 0HLKTHLHHRIQV:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:26.5148863+07:00 0HLKTHLHHRIQV:00000003 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:26.5611784+07:00 0HLKTHLHHRIQV:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:26.5884858+07:00 0HLKTHLHHRIQV:00000003 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 72.3532ms (afa2e885)
+2019-02-28T22:01:26.6388970+07:00 0HLKTHLHHRIQV:00000003 [INF] Request finished in 127.243ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:26.6671128+07:00 0HLKTHLHHRIQV:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:26.6743581+07:00 0HLKTHLHHRIQV:00000004 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:26.7013763+07:00 0HLKTHLHHRIQV:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:26.7284833+07:00 0HLKTHLHHRIQV:00000004 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 33.7672ms (afa2e885)
+2019-02-28T22:01:26.7542485+07:00 0HLKTHLHHRIQV:00000004 [INF] Request finished in 86.7123ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:26.8052142+07:00 0HLKTHLHHRIQV:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:26.8131460+07:00 0HLKTHLHHRIQV:00000005 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:26.8423645+07:00 0HLKTHLHHRIQV:00000005 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:26.8695436+07:00 0HLKTHLHHRIQV:00000005 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 36.7748ms (afa2e885)
+2019-02-28T22:01:26.8972317+07:00 0HLKTHLHHRIQV:00000005 [INF] Request finished in 92.9792ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:26.9526220+07:00 0HLKTHLHHRIQV:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:26.9802474+07:00 0HLKTHLHHRIQV:00000006 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:26.9878177+07:00 0HLKTHLHHRIQV:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:27.0169676+07:00 0HLKTHLHHRIQV:00000006 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 34.4038ms (afa2e885)
+2019-02-28T22:01:27.0461452+07:00 0HLKTHLHHRIQV:00000006 [INF] Request finished in 70.6534ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:27.1316347+07:00 0HLKTHLHHRIQV:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:27.1596488+07:00 0HLKTHLHHRIQV:00000007 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:27.1924150+07:00 0HLKTHLHHRIQV:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:27.1989047+07:00 0HLKTHLHHRIQV:00000007 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 61.0572ms (afa2e885)
+2019-02-28T22:01:27.2079376+07:00 0HLKTHLHHRIQV:00000007 [INF] Request finished in 94.4392ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:27.2783564+07:00 0HLKTHLHHRIQV:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:27.2883460+07:00 0HLKTHLHHRIQV:00000008 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:27.3149003+07:00 0HLKTHLHHRIQV:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:27.3436522+07:00 0HLKTHLHHRIQV:00000008 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 36.8217ms (afa2e885)
+2019-02-28T22:01:27.3502288+07:00 0HLKTHLHHRIQV:00000008 [INF] Request finished in 71.4854ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:27.4667080+07:00 0HLKTHLHHRIQV:00000009 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:27.4744938+07:00 0HLKTHLHHRIQV:00000009 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:27.5102522+07:00 0HLKTHLHHRIQV:00000009 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:27.5881761+07:00 0HLKTHLHHRIQV:00000009 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 43.7286ms (afa2e885)
+2019-02-28T22:01:27.6265552+07:00 0HLKTHLHHRIQV:00000009 [INF] Request finished in 148.8349ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:27.6580773+07:00 0HLKTHLHHRIQV:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:27.6668381+07:00 0HLKTHLHHRIQV:0000000A [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:27.6971002+07:00 0HLKTHLHHRIQV:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:27.7305885+07:00 0HLKTHLHHRIQV:0000000A [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 46.912ms (afa2e885)
+2019-02-28T22:01:27.7641078+07:00 0HLKTHLHHRIQV:0000000A [INF] Request finished in 82.8915ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:27.8465147+07:00 0HLKTHLHHRIQV:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:27.8607709+07:00 0HLKTHLHHRIQV:0000000B [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:27.8915413+07:00 0HLKTHLHHRIQV:0000000B [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:27.9223670+07:00 0HLKTHLHHRIQV:0000000B [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 44.6306ms (afa2e885)
+2019-02-28T22:01:27.9712383+07:00 0HLKTHLHHRIQV:0000000B [INF] Request finished in 105.1724ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:01:29.0110817+07:00 0HLKTHLHHRIQV:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2019-02-28T22:01:29.0638246+07:00 0HLKTHLHHRIQV:0000000C [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2019-02-28T22:01:29.2443527+07:00 0HLKTHLHHRIQV:0000000C [INF] Request finished in 177.0973ms 200 text/plain (791a596a)
+2019-02-28T22:01:37.4721834+07:00 0HLKTHLHHRIR0:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:01:37.4810939+07:00 0HLKTHLHHRIR0:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:01:37.4919525+07:00 0HLKTHLHHRIR0:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:01:37.5014041+07:00 0HLKTHLHHRIR0:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 22.6918ms (afa2e885)
+2019-02-28T22:01:37.5151231+07:00 0HLKTHLHHRIR0:00000001 [INF] Request finished in 35.9859ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:03:20.6875766+07:00 0HLKTHLHHRIR2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/login   (ca22a1cb)
+2019-02-28T22:03:20.6959402+07:00 0HLKTHLHHRIR2:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-28T22:03:20.7020278+07:00 0HLKTHLHHRIR2:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-28T22:03:20.8241125+07:00 0HLKTHLHHRIR2:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" in 19.2465ms (afa2e885)
+2019-02-28T22:03:20.9168797+07:00 0HLKTHLHHRIR1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/shared/main.js   (ca22a1cb)
+2019-02-28T22:03:21.0157064+07:00 0HLKTHLHHRIR1:00000001 [INF] The file "/app/shared/main.js" was not modified (f1f8d725)
+2019-02-28T22:03:21.0428939+07:00 0HLKTHLHHRIR1:00000001 [INF] Request finished in 205.3388ms 304 application/javascript (791a596a)
+2019-02-28T22:03:21.0784712+07:00 0HLKTHLHHRIR3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/controllers/login/index.js   (ca22a1cb)
+2019-02-28T22:03:21.1081130+07:00 0HLKTHLHHRIR2:00000001 [INF] Request finished in 226.6252ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-28T22:03:21.1095077+07:00 0HLKTHLHHRIR3:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2019-02-28T22:03:21.4108876+07:00 0HLKTHLHHRIR3:00000001 [INF] Request finished in 362.9819ms 200 application/javascript (791a596a)
+2019-02-28T22:03:21.4889377+07:00 0HLKTHLHHRIR3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/favicon.ico   (ca22a1cb)
+2019-02-28T22:03:21.5042611+07:00 0HLKTHLHHRIR3:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\favicon.ico"' (27b0a520)
+2019-02-28T22:03:21.5733827+07:00 0HLKTHLHHRIR3:00000002 [INF] Request finished in 113.725ms 200 image/x-icon (791a596a)
+2019-02-28T22:03:26.7661063+07:00 0HLKTHLHHRIR4:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:03:26.7925525+07:00 0HLKTHLHHRIR4:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:03:26.8007722+07:00 0HLKTHLHHRIR4:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:03:26.8120234+07:00 0HLKTHLHHRIR4:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 36.1809ms (afa2e885)
+2019-02-28T22:03:26.8344140+07:00 0HLKTHLHHRIR4:00000001 [INF] Request finished in 112.6391ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:03:38.0954005+07:00 0HLKTHLHHRIR5:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:03:38.1086505+07:00 0HLKTHLHHRIR5:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:03:38.1154708+07:00 0HLKTHLHHRIR5:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:03:38.1454331+07:00 0HLKTHLHHRIR5:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 20.2065ms (afa2e885)
+2019-02-28T22:03:38.1752285+07:00 0HLKTHLHHRIR5:00000001 [INF] Request finished in 59.261ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:03:58.9794726+07:00 0HLKTHLHHRIR6:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:03:59.0077717+07:00 0HLKTHLHHRIR6:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:04:20.4039411+07:00 0HLKTHLHHRIR6:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:04:20.4403929+07:00 0HLKTHLHHRIR6:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 21424.235ms (afa2e885)
+2019-02-28T22:04:20.4489219+07:00 0HLKTHLHHRIR6:00000001 [INF] Request finished in 21488.3912ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:04:30.9872417+07:00 0HLKTHLHHRIR7:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 14 (ca22a1cb)
+2019-02-28T22:04:30.9977202+07:00 0HLKTHLHHRIR7:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Invalid (ba7f4ac2)
+2019-02-28T22:05:26.1999248+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-02-28T22:05:26.5589558+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T22:05:26.5974796+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T22:05:26.6317695+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ContactDetails] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T22:05:26.6806391+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-28T22:05:26.7211817+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-28T22:05:26.7325750+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-28T22:05:26.7451741+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-28T22:05:26.7794158+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-28T22:05:26.7975961+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-28T22:05:26.8348211+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-28T22:05:26.8553586+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T22:05:26.8971160+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T22:05:26.9300057+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-28T22:05:28.2832994+07:00 0HLKTHOM1RPU9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/   (ca22a1cb)
+2019-02-28T22:05:28.7697548+07:00 0HLKTHOM1RPU9:00000001 [INF] Executing action method "TaiShop.Controllers.HomeController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-28T22:05:34.3756215+07:00 0HLKTHOM1RPU9:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-28T22:05:35.7759393+07:00 0HLKTHOM1RPU9:00000001 [INF] Executed action "TaiShop.Controllers.HomeController.Index (TaiShop)" in 6986.2946ms (afa2e885)
+2019-02-28T22:05:35.8157541+07:00 0HLKTHOM1RPU9:00000001 [INF] Request finished in 7613.1238ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-28T22:05:39.9033224+07:00 0HLKTHOM1RPUB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin/login   (ca22a1cb)
+2019-02-28T22:05:39.9289927+07:00 0HLKTHOM1RPUB:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-28T22:05:40.7210700+07:00 0HLKTHOM1RPUB:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-28T22:05:40.8050691+07:00 0HLKTHOM1RPUB:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Index (TaiShop)" in 870.685ms (afa2e885)
+2019-02-28T22:05:40.9695048+07:00 0HLKTHOM1RPUD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/controllers/login/index.js   (ca22a1cb)
+2019-02-28T22:05:40.9839658+07:00 0HLKTHOM1RPUB:00000001 [INF] Request finished in 920.0593ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-28T22:05:41.0397717+07:00 0HLKTHOM1RPUD:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2019-02-28T22:05:41.0441125+07:00 0HLKTHOM1RPUC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/app/shared/main.js   (ca22a1cb)
+2019-02-28T22:05:41.0747335+07:00 0HLKTHOM1RPUC:00000001 [INF] The file "/app/shared/main.js" was not modified (f1f8d725)
+2019-02-28T22:05:41.1519410+07:00 0HLKTHOM1RPUC:00000001 [INF] Request finished in 237.9763ms 304 application/javascript (791a596a)
+2019-02-28T22:05:41.1557981+07:00 0HLKTHOM1RPUD:00000001 [INF] Request finished in 225.8798ms 200 application/javascript (791a596a)
+2019-02-28T22:05:50.6375052+07:00 0HLKTHOM1RPUE:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:51024/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-28T22:05:50.7841842+07:00 0HLKTHOM1RPUE:00000001 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" with arguments (["TaiShop.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-28T22:05:52.8694928+07:00 0HLKTHOM1RPUE:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TaiShop.Data.EF " (9958f5bb)
+2019-02-28T22:05:53.0027864+07:00 0HLKTHOM1RPUE:00000001 [INF] Executed DbCommand ("65"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-28T22:05:53.2394277+07:00 0HLKTHOM1RPUE:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-28T22:05:53.3238266+07:00 0HLKTHOM1RPUE:00000001 [INF] Executed DbCommand ("38"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-28T22:05:53.3443626+07:00 0HLKTHOM1RPUE:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-28T22:05:53.4039658+07:00 0HLKTHOM1RPUE:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-28T22:05:53.4521223+07:00 0HLKTHOM1RPUE:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-28T22:05:53.5186175+07:00 0HLKTHOM1RPUE:00000001 [INF] User logged in. (fdce0db4)
+2019-02-28T22:05:53.5600255+07:00 0HLKTHOM1RPUE:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-28T22:05:53.6615543+07:00 0HLKTHOM1RPUE:00000001 [INF] Executed action "TaiShop.Areas.Admin.Controllers.LoginController.Authen (TaiShop)" in 2924.6809ms (afa2e885)
+2019-02-28T22:05:53.6709610+07:00 0HLKTHOM1RPUE:00000001 [INF] Request finished in 3054.5954ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-28T22:05:53.6911048+07:00 0HLKTHOM1RPUE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/Admin/Home/Index   (ca22a1cb)
+2019-02-28T22:05:53.7240353+07:00 0HLKTHOM1RPUE:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-28T22:05:53.7558719+07:00 0HLKTHOM1RPUE:00000002 [INF] Executing action method "TaiShop.Areas.Admin.Controllers.HomeController.Index (TaiShop)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-28T22:05:54.0420428+07:00 0HLKTHOM1RPUE:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-28T22:05:54.4721045+07:00 0HLKTHOM1RPUE:00000002 [INF] Executed action "TaiShop.Areas.Admin.Controllers.HomeController.Index (TaiShop)" in 735.3416ms (afa2e885)
+2019-02-28T22:05:54.5892112+07:00 0HLKTHOM1RPUE:00000002 [INF] Request finished in 798.1222ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-28T22:05:54.6390847+07:00 0HLKTHOM1RPUJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-28T22:05:54.7094915+07:00 0HLKTHOM1RPUH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-28T22:05:54.7304234+07:00 0HLKTHOM1RPUH:00000001 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2019-02-28T22:05:54.7389588+07:00 0HLKTHOM1RPUI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/nprogress/nprogress.js   (ca22a1cb)
+2019-02-28T22:05:54.7472145+07:00 0HLKTHOM1RPUG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2019-02-28T22:05:54.8256541+07:00 0HLKTHOM1RPUJ:00000001 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2019-02-28T22:05:54.8312848+07:00 0HLKTHOM1RPUF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin-side/images/img.jpg   (ca22a1cb)
+2019-02-28T22:05:54.8651131+07:00 0HLKTHOM1RPUI:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2019-02-28T22:05:54.8835114+07:00 0HLKTHOM1RPUF:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2019-02-28T22:05:54.8945262+07:00 0HLKTHOM1RPUE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-28T22:05:54.9930841+07:00 0HLKTHOM1RPUE:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2019-02-28T22:05:55.0202572+07:00 0HLKTHOM1RPUE:00000003 [INF] Request finished in 300.9992ms 304 text/css (791a596a)
+2019-02-28T22:05:55.0516061+07:00 0HLKTHOM1RPUG:00000001 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2019-02-28T22:05:55.0646741+07:00 0HLKTHOM1RPUI:00000001 [INF] Request finished in 321.9127ms 200 application/javascript (791a596a)
+2019-02-28T22:05:55.1628530+07:00 0HLKTHOM1RPUF:00000001 [INF] Request finished in 411.9829ms 200 image/jpeg (791a596a)
+2019-02-28T22:05:55.2385590+07:00 0HLKTHOM1RPUJ:00000001 [INF] Request finished in 533.713ms 200 application/javascript (791a596a)
+2019-02-28T22:05:55.3164906+07:00 0HLKTHOM1RPUH:00000001 [INF] Request finished in 486.9994ms 200 application/javascript (791a596a)
+2019-02-28T22:05:55.3899843+07:00 0HLKTHOM1RPUG:00000001 [INF] Request finished in 664.7274ms 200 application/javascript (791a596a)
+2019-02-28T22:05:55.4175987+07:00 0HLKTHOM1RPUI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-28T22:05:55.4379545+07:00 0HLKTHOM1RPUE:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/bootbox/bootbox.js   (ca22a1cb)
+2019-02-28T22:05:55.5009291+07:00 0HLKTHOM1RPUI:00000002 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2019-02-28T22:05:55.5067272+07:00 0HLKTHOM1RPUF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/lib/moment/moment.js   (ca22a1cb)
+2019-02-28T22:05:55.5560622+07:00 0HLKTHOM1RPUE:00000004 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2019-02-28T22:05:55.5587984+07:00 0HLKTHOM1RPUF:00000002 [INF] Sending file. Request path: '"/lib/moment/moment.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\lib\moment\moment.js"' (27b0a520)
+2019-02-28T22:05:55.5829179+07:00 0HLKTHOM1RPUH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:51024/admin-side/js/custom.js   (ca22a1cb)
+2019-02-28T22:05:55.6323191+07:00 0HLKTHOM1RPUH:00000002 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"E:\ASP.Net Core\TaiShop\TaiShop\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2019-02-28T22:05:55.6939071+07:00 0HLKTHOM1RPUI:00000002 [INF] Request finished in 379.4129ms 200 application/javascript (791a596a)
+2019-02-28T22:05:55.7418158+07:00 0HLKTHOM1RPUH:00000002 [INF] Request finished in 263.3045ms 200 application/javascript (791a596a)
+2019-02-28T22:05:55.7930375+07:00 0HLKTHOM1RPUE:00000004 [INF] Request finished in 573.7565ms 200 application/javascript (791a596a)
+2019-02-28T22:05:55.8031265+07:00 0HLKTHOM1RPUF:00000002 [INF] Request finished in 317.2573ms 200 application/javascript (791a596a)
